@@ -1,0 +1,234 @@
+;---------------------------------------
+;		COLORS
+;---------------------------------------
+
+[colors]
+nord0 = #2E3440
+nord1 = #3B4252
+nord2 = #434C5E
+nord3 = #4C566A
+nord4 = #D8DEE9
+nord5 = #E5E9F0
+nord6 = #ECEFF4
+nord7 = #8FBCBB
+nord8 = #88C0D0
+nord9 = #81A1C1
+nord10 = #5E81AC
+nord11 = #BF616A
+nord12 = #D08770
+nord13 = #EBCB8B
+nord14 = #A3BE8C
+nord15 = #B48EAD
+
+;---------------------------------------
+;		GLOBAL
+;---------------------------------------
+
+[bar/nord]
+width = 98%
+height = 16
+bottom = true
+
+offset-x = 1%
+offset-y = 1%
+
+border-size = 4
+border-color = ${colors.nord10}
+
+background = ${colors.nord3}
+foreground = ${colors.nord5}
+
+
+;---------------------------------------
+;		FONTS
+;---------------------------------------
+
+font-0 = Hack:size=10;3
+font-1 = FontAwesome:size=10;3
+
+;---------------------------------------
+;	     MODULES LAYOUT
+;---------------------------------------
+
+modules-left = bspwm RightArrow1 xwindow RightArrow2
+modules-right = date LeftArrow volume xbacklight battery
+
+;---------------------------------------
+;	      BSPWM MODULE
+;---------------------------------------
+
+[module/bspwm]
+type = internal/bspwm
+
+format = <label-state>
+
+label-focused-occupied = 
+label-focused-occupied-foreground = ${colors.nord6}
+label-focused-occupied-background = ${colors.nord8}
+label-focused-occupied-padding = 1
+
+label-focused-urgent = 
+label-focused-urgent-foreground = ${colors.nord6}
+label-focused-urgent-background = ${colors.nord8}
+label-focused-urgent-padding = 1
+
+label-focused-empty = 
+label-focused-empty-foreground = ${colors.nord6}
+label-focused-empty-background = ${colors.nord8}
+label-focused-empty-padding = 1
+
+label-occupied = 
+label-occupied-foreground = ${colors.nord1}
+label-occupied-background = ${colors.nord8}
+label-occupied-padding = 1
+
+label-urgent = 
+label-urgent-foreground = ${colors.nord13}
+label-urgent-background = ${colors.nord8}
+label-urgent-padding = 1
+
+label-empty = 
+label-empty-foreground = ${colors.nord1}
+label-empty-background = ${colors.nord8}
+label-empty-padding = 1
+
+;---------------------------------------
+;	      TEXT MODULES
+;---------------------------------------
+
+[module/RightArrow1]
+type = custom/text
+content = " "
+content-foreground = ${colors.nord8}
+content-background = ${colors.nord1}
+
+[module/RightArrow2]
+type = custom/text
+content = ""
+content-foreground = ${colors.nord1}
+content-background = ${colors.nord3}
+
+[module/LeftArrow]
+type = custom/text
+content = ""
+content-foreground = ${colors.nord1}
+content-background = ${colors.nord3}
+
+;---------------------------------------
+;	   XWINDOW MODULE
+;---------------------------------------
+
+[module/xwindow]
+type = internal/xwindow
+
+format-foreground = ${colors.nord5}
+format-background = ${colors.nord1}
+format-padding = 1
+
+label =  %title%
+label-maxlen = 40
+
+;---------------------------------------
+;	   XBACKLIGHT MODULE
+;---------------------------------------
+
+[module/xbacklight]
+type = internal/xbacklight
+
+format = <label>
+format-foreground = ${colors.nord5}
+format-background = ${colors.nord1}
+
+label = " %percentage%"
+
+;---------------------------------------
+;	   DATE MODULE
+;---------------------------------------
+
+[module/date]
+type = internal/date
+
+interval = 60
+
+date = %a %d
+
+time = %H:%M
+
+label =   %date%   %time%
+
+format-foreground = ${colors.nord5}
+format-background = ${colors.nord3}
+format-padding = 1
+
+;---------------------------------------
+;	   VOLUME MODULE
+;---------------------------------------
+
+[module/volume]
+type = internal/volume
+
+master-soundcard = hw:1
+speaker-soundcard = hw:1
+headphone-soundcard = hw:1
+mapped = true
+
+format-volume = <ramp-volume><label-volume>
+format-volume-foreground = ${colors.nord5}
+format-volume-background = ${colors.nord1}
+
+label-volume = "%percentage% "
+label-volume-foreground = ${colors.nord5}
+label-volume-background = ${colors.nord1}
+label-muted = "  muted "
+label-muted-foreground = ${colors.nord5}
+label-muted-background = ${colors.nord1}
+
+ramp-volume-0 = "  "
+ramp-volume-0-foreground = ${colors.nord5}
+ramp-volume-0-background = ${colors.nord1}
+ramp-volume-1 = "  "
+ramp-volume-1-foreground = ${colors.nord5}
+ramp-volume-1-background = ${colors.nord1}
+ramp-volume-2 = "  "
+ramp-volume-2-foreground = ${colors.nord5}
+ramp-volume-2-background = ${colors.nord1}
+ramp-volume-3 = "  "
+ramp-volume-3-foreground = ${colors.nord5}
+ramp-volume-3-background = ${colors.nord1}
+
+;---------------------------------------
+;	   BATTERY MODULE
+;---------------------------------------
+
+[module/battery]
+type = internal/battery
+
+battery = BAT0
+adapter = ADP1
+
+full-at = 95
+
+format-charging = <label-charging>
+format-charging-foreground = ${colors.nord5}
+format-charging-background = ${colors.nord1}
+
+format-full = <label-full>
+format-full-foreground = ${colors.nord5}
+format-full-background = ${colors.nord1}
+
+format-discharging = <ramp-capacity> <label-discharging>
+format-discharging-foreground = ${colors.nord5}
+format-discharging-background = ${colors.nord1}
+
+label-charging = "  %percentage% "
+label-discharging = "%percentage% "
+label-discharging-foreground = ${colors.nord5}
+label-full = "  %percentage% "
+
+ramp-capacity-0 = " "
+ramp-capacity-0-foreground = ${colors.nord11}
+ramp-capacity-1 = " "
+ramp-capacity-1-foreground = ${colors.nord11}
+ramp-capacity-2 = " "
+ramp-capacity-3 = " "
+ramp-capacity-4 = " "

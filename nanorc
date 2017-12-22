@@ -1,0 +1,5 @@
+set softwrap
+set titlecolor black,blue
+set statuscolor black,green
+set keycolor brightgreen
+set functioncolor brightblue
