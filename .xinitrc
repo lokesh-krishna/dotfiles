@@ -8,9 +8,7 @@ sysmodmap=/etc/X11/xinit/.Xmodmap
 # merge in defaults and keymaps
 
 if [ -f $sysresources ]; then
-
     xrdb -merge $sysresources
-
 fi
 
 if [ -f $sysmodmap ]; then
@@ -18,9 +16,7 @@ if [ -f $sysmodmap ]; then
 fi
 
 if [ -f "$userresources" ]; then
-
     xrdb -merge "$userresources"
-
 fi
 
 if [ -f "$usermodmap" ]; then
@@ -39,7 +35,7 @@ fi
 # set the background
 ~/.fehbg &
 
-# call the compositor
+# call the compositor and fix urxvt font lag
 compton --xrender-sync --xrender-sync-fence &
 
 # set the cursor
