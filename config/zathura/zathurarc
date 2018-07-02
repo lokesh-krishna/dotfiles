@@ -1,4 +1,4 @@
-set font			"Hack 10"
+set font			"Hack 9"
 set default-fg 			"#d8dee9"
 set default-bg 			"#2e3440"
 
@@ -19,12 +19,13 @@ set tabbar-bg			"#4c566a"
 set tabbar-focus-fg		"#3b4252"
 set tabbar-focus-bg		"#88c0d0"
 
-set notification-bg		"#3b4252"
+set notification-bg		"#2e3440"
 set notification-fg		"#d8dee9"
-set notification-error-bg	"#3b4252"
-set notification-error-fg	"#BF616a"
-set notification-warning-bg	"#3b4252"
+set notification-error-bg	"#2e3440"
+set notification-error-fg	"#bf616a"
+set notification-warning-bg	"#2e3440"
 set notification-warning-fg	"#ebcb8b"
+set selection-notification	"false"
 
 set inputbar-fg			"#d8dee9"
 set inputbar-bg 		"#2e3440"

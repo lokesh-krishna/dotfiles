@@ -10,7 +10,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 
 " Plugins
-Plug 'arcticicestudio/nord-vim'		" best color scheme ever
+Plug 'arcticicestudio/nord-vim', { 'branch': 'develop' }	
 Plug 'junegunn/goyo.vim'		" distraction free writing
 Plug 'junegunn/limelight.vim'		" hyperfocused writing
 Plug 'reedes/vim-pencil'		" improved writing experience
@@ -20,7 +20,6 @@ Plug 'mgee/lightline-bufferline'	" Show buffers in tabline
 Plug 'junegunn/fzf.vim'			" Integrate FZF with vim
 Plug 'nelstrom/vim-markdown-folding'	" Fold markdown files by headings
 Plug 'machakann/vim-sandwich'		" Surround text objects easily
-Plug 'scrooloose/nerdtree'		" File system explorer
 
 " Finish initialization of vim-plug
 call plug#end()
@@ -29,11 +28,9 @@ call plug#end()
 " 			Vim Color Configuration				
 " ====================================================================
 
-set t_Co=256				" Enable support for lots of colors
-
-" Enable italics for Markdown
-autocmd ColorScheme nord highlight Italic cterm=italic gui=italic
-
+set termguicolors
+let g:nord_italic = 1			" Enable italics
+let g:nord_comment_brightness = 10	" Better comment contrast
 colorscheme nord			" color scheme selection
 
 " ====================================================================
@@ -44,8 +41,7 @@ set spell				" Enable spell-checking
 set scrolloff=7				" Show 7 lines around the cursorline
 let g:netrw_banner = 0			" Hide banner shown in the file explorer
 let g:netrw_liststyle = 3		" Use tree view in file explorer
-set nu					" Enable line numbers
-set relativenumber			" line numbers are relative 
+set number relativenumber		" Enable line numbers
 set hidden  				" allow buffer switching without saving
 set cursorline				" Show cursor line
 set showtabline =2			" Show tabline always
@@ -113,6 +109,9 @@ let g:lightline.tabline          = {'left': [['buffers']], 'right': [['close']]}
 let g:lightline.component_expand = {'buffers': 'lightline#bufferline#buffers'}
 let g:lightline.component_type   = {'buffers': 'tabsel'}
 
+" Lightline settings
+let g:limelight_conceal_ctermfg = 008
+
 " Goyo settings
 " Disable cursorline highlight, center cursorline and let cursor show mode
 function! s:goyo_enter()
@@ -136,22 +135,13 @@ if has('nvim') || has('gui_running')
   autocmd  FileType fzf set laststatus=0 | autocmd WinLeave <buffer> set laststatus=2
 endif
 
-" NERDTress File highlighting
-function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)
- exec 'autocmd filetype nerdtree highlight ' . a:extension .' ctermbg='. a:bg .' ctermfg='. a:fg .' guibg='. a:guibg .' guifg='. a:guifg
- exec 'autocmd filetype nerdtree syn match ' . a:extension .' #^\s\+.*'. a:extension .'$#'
-endfunction
+" Don't use colors for spelling errors
+highlight clear SpellBad
+highlight clear SpellCap
+highlight clear SpellLocal
+highlight clear SpellRare
 
-call NERDTreeHighlightFile('jade', 'green', 'none', 'green', '#151515')
-call NERDTreeHighlightFile('ini', 'yellow', 'none', 'yellow', '#151515')
-call NERDTreeHighlightFile('md', 'blue', 'none', '#3366FF', '#151515')
-call NERDTreeHighlightFile('yml', 'yellow', 'none', 'yellow', '#151515')
-call NERDTreeHighlightFile('config', 'yellow', 'none', 'yellow', '#151515')
-call NERDTreeHighlightFile('conf', 'yellow', 'none', 'yellow', '#151515')
-call NERDTreeHighlightFile('json', 'yellow', 'none', 'yellow', '#151515')
-call NERDTreeHighlightFile('html', 'yellow', 'none', 'yellow', '#151515')
-call NERDTreeHighlightFile('styl', 'cyan', 'none', 'cyan', '#151515')
-call NERDTreeHighlightFile('css', 'cyan', 'none', 'cyan', '#151515')
-call NERDTreeHighlightFile('coffee', 'Red', 'none', 'red', '#151515')
-call NERDTreeHighlightFile('js', 'Red', 'none', '#ffa500', '#151515')
-call NERDTreeHighlightFile('php', 'Magenta', 'none', '#ff00ff', '#151515')
+"highlight SpellBad cterm=underline
+"highlight SpellCap cterm=underline
+"highlight SpellLocal cterm=underline
+"highlight SpellRare cterm=underline

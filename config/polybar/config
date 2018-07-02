@@ -25,14 +25,14 @@ nord15 = #B48EAD
 ;---------------------------------------
 
 [bar/nord]
-width = 98%
+width = 1420
 height = 16
 bottom = true
 
-offset-x = 1%
+offset-x = 10
 offset-y = 1%
 
-border-size = 4
+border-size = 2
 border-color = ${colors.nord10}
 
 background = ${colors.nord3}
@@ -43,7 +43,7 @@ foreground = ${colors.nord5}
 ;		FONTS
 ;---------------------------------------
 
-font-0 = Hack:size=10;3
+font-0 = Hack:size=9;3
 font-1 = FontAwesome:size=10;3
 
 ;---------------------------------------
@@ -68,7 +68,7 @@ label-focused-occupied-background = ${colors.nord8}
 label-focused-occupied-padding = 1
 
 label-focused-urgent = 
-label-focused-urgent-foreground = ${colors.nord6}
+label-focused-urgent-foreground = ${colors.nord11}
 label-focused-urgent-background = ${colors.nord8}
 label-focused-urgent-padding = 1
 
@@ -179,7 +179,7 @@ format-volume-background = ${colors.nord1}
 label-volume = "%percentage% "
 label-volume-foreground = ${colors.nord5}
 label-volume-background = ${colors.nord1}
-label-muted = "  muted "
+label-muted = "  mute "
 label-muted-foreground = ${colors.nord5}
 label-muted-background = ${colors.nord1}
 
@@ -206,7 +206,7 @@ type = internal/battery
 battery = BAT0
 adapter = ADP1
 
-full-at = 95
+full-at = 99
 
 format-charging = <label-charging>
 format-charging-foreground = ${colors.nord5}
@@ -221,7 +221,7 @@ format-discharging-foreground = ${colors.nord5}
 format-discharging-background = ${colors.nord1}
 
 label-charging = "  %percentage% "
-label-discharging = "%percentage% "
+label-discharging ="%percentage% "
 label-discharging-foreground = ${colors.nord5}
 label-full = "  %percentage% "
 

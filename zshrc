@@ -43,8 +43,8 @@ export EDITOR=nvim
 # Download videos as mp3
 alias mp3='youtube-dl -x --audio-format=mp3' 
 
-# Check if icon is available in Papirus
-alias icon='ls /home/loki/.icons/Papirus/64x64/apps/ | grep' 
+# Settings for feh
+alias feh='feh --draw-filename --draw-tinted --image-bg black --scale-down --fontpath /home/loki/.local/share/fonts/Hack/ --font Hack-Regular/10'
 
 # Backup system
 alias backup='rsync --archive --delete \
@@ -58,18 +58,20 @@ alias backup='rsync --archive --delete \
 	~/.task \
 	~/.taskrc \
 	~/.zprezto \
-	~/.zshrc \
-	~/Backups \
+	~/backups \
 	~/bin \
-	~/Documents \
-	~/Downloads \
-	~/Music \
-	~/Sync \
-	~/Pictures \
+	~/documents \
+	~/downloads \
+	~/music \
+	~/sync \
+	~/pictures \
 	/mnt/veracrypt1/'
 
 # Open files with the .md extension automatically with Vim
 alias -s md=nvim 
+
+# Open my ledger file by default  
+alias ledger='ledger -f /home/loki/sync/ledger/ledger.dat'
 
 ########################################
 # Shell Functions
@@ -91,7 +93,25 @@ return
 export LESS_TERMCAP_mb=$'\E[1;34m'     # begin bold
 export LESS_TERMCAP_md=$'\E[1;34m'     # begin blink
 export LESS_TERMCAP_me=$'\E[0m'        # reset bold/blink
-export LESS_TERMCAP_so=$'\E[01;36m'    # begin reverse video
+export LESS_TERMCAP_so=$'\E[01;35m'    # begin reverse video
 export LESS_TERMCAP_se=$'\E[0m'        # reset reverse video
 export LESS_TERMCAP_us=$'\E[1;32m'     # begin underline
 export LESS_TERMCAP_ue=$'\E[0m'        # reset underline
+
+########################################
+# Syntax Highlighting
+########################################
+
+# Declaring the variable 
+typeset -A ZSH_HIGHLIGHT_STYLES
+
+ZSH_HIGHLIGHT_STYLES[alias]='fg=green,bold'
+ZSH_HIGHLIGHT_STYLES[suffix-alias]='fg=green,bold'
+ZSH_HIGHLIGHT_STYLES[builtin]='fg=green,bold'
+ZSH_HIGHLIGHT_STYLES[function]='fg=green,bold'
+ZSH_HIGHLIGHT_STYLES[command]='fg=green,bold'
+ZSH_HIGHLIGHT_STYLES[precommand]='fg=green,bold'
+ZSH_HIGHLIGHT_STYLES[commandseparator]='fg=white,bold'
+ZSH_HIGHLIGHT_STYLES[redirection]='fg=white,bold'
+ZSH_HIGHLIGHT_STYLES[single-hyphen-option]='fg=white,bold'
+ZSH_HIGHLIGHT_STYLES[double-hyphen-option]='fg=white,bold'

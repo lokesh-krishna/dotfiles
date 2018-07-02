@@ -4,11 +4,11 @@
 
 # terminal emulator
 super + Return
-	urxvt
+	kitty
 
 # program launcher
 super + @space
-	rofi -show drun -display-run 'Run' -display-drun 'Programs'
+	rofi -show drun -display-run 'Run:' -display-drun 'Programs:'
 
 # rofi-pass
 super + shift + space
@@ -28,7 +28,7 @@ super + Escape
 
 # volume
 XF86Audio{Raise,Lower}Volume
-	sh -c "pactl set-sink-mute 0 false ; pactl set-sink-volume 0 {+,-}5%"
+	sh -c "pactl set-sink-mute 0 false ; pactl set-sink-volume 0 {+,-}2%"
 
 XF86AudioMute
 	pactl set-sink-mute 0 toggle

@@ -61,7 +61,7 @@
 
     # Defines width in pixels of frame around the notification window.
     # Set to 0 to disable.
-    frame_width = 4
+    frame_width = 2
 
     # Defines color of the frame around the notification window.
     frame_color = "#5e81ac"
@@ -84,7 +84,7 @@
 
     ### Text ###
 
-    font = Hack 10
+    font = Hack 9
 
     # The spacing between lines.  If the height is smaller than the
     # font height, it will get raised to the font height.

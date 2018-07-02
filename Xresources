@@ -19,8 +19,7 @@
 *.foreground:   nord4
 *.background:   nord0
 *.cursorColor:  nord4
-*fading: 35
-*fadeColor: nord3
+*fading: 0
 
 *.color0: nord1
 *.color1: nord11
@@ -39,9 +38,6 @@
 *.color14: nord7
 *.color15: nord6
 
-! setting fonts
-URxvt.font: 		xft:Hack:size=10:antialias=true:hinting=true
-
 ! font settings
 Xft.autohint: 0
 Xft.lcdfilter: lcddefault
@@ -49,9 +45,3 @@ Xft.hintstyle: hintslight
 Xft.hinting: 1
 Xft.antialias: 1
 Xft.rgba: rgb
-
-! Hide scroll bar
-URxvt.scrollBar: false
-
-! terminal padding
-URxvt.internalBorder: 20
