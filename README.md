@@ -13,7 +13,7 @@ Below is a guided tour of what this setup looks like presently:
 ![Zathura](/images/zathura.png)
 ## Rofi
 ![Rofi](/images/rofi.png)
-## Dunst and Color Script
+## Dunst and Color Scripts
 ![Notification and a couple of color scripts](/images/colors.png)
 ## Firefox
 ![Firefox showing my custom start page](/images/firefox.png)
