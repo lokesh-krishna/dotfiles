@@ -6,30 +6,30 @@ The original setup, developed in 2017, has now been updated to Nord v2 in 2019.
 ## Nord v2
 Below is a guided tour of what this setup looks like presently:
 
-## Clean
+### Clean
 ![Screenshot of clean desktop](/nord-v2/images/clean.png)
-## System Information
+### System Information
 ![neofetch](/nord-v2/images/system-information.png)
-## In Action
+### In Action
 ![Multiple windows](/nord-v2/images/busy.png)
-## Zathura
+### Zathura
 ![Zathura](/nord-v2/images/zathura.png)
-## Rofi
+### Rofi
 ![Rofi](/nord-v2/images/rofi.png)
-## Dunst 
+### Dunst 
 ![Notification](/nord-v2/images/clean-with-notification.png)
-## Firefox
+### Firefox
 ![Firefox showing my custom start page](/nord-v2/images/firefox.png)
 
 You can find my start page at [lokesh-krishna.github.io](https://github.com/lokesh-krishna/lokesh-krishna.github.io).
 
-## ncmpcpp and cava
+### ncmpcpp and cava
 ![Music](/nord-v2/images/music.png)
 
-## i3lock
+### i3lock
 ![Lock screen](/nord-v2/images/lock.png)
 
-## Wallpaper
+### Wallpaper
 ![Wallpaper using the Nord color scheme](/nord-v2/images/arctic-landscape.png)
 Based on the gorgeous [Arctic Landscape](https://github.com/arcticicestudio/arctic-landscape) by [ArcticIceStudio](https://github.com/arcticicestudio).
 
@@ -37,28 +37,28 @@ Based on the gorgeous [Arctic Landscape](https://github.com/arcticicestudio/arct
 
 This is the setup as it was originally created in 2017.
 
-## Clean
+### Clean
 ![Screenshot of clean desktop](/nord-v1/images/clean.png)
-## System Information
+### System Information
 ![neofetch](/nord-v1/images/sysinfo.png)
-## In Action
+### In Action
 ![Multiple windows](/nord-v1/images/action.png)
-## Zathura
+### Zathura
 ![Zathura](/nord-v1/images/zathura.png)
-## Rofi
+### Rofi
 ![Rofi](/nord-v1/images/rofi.png)
-## Dunst and Color Scripts
+### Dunst and Color Scripts
 ![Notification and a couple of color scripts](/nord-v1/images/colors.png)
-## Firefox
+### Firefox
 ![Firefox showing my custom start page](/nord-v1/images/firefox.png)
 
 You can find my start page at [lokesh-krishna.github.io](https://github.com/lokesh-krishna/lokesh-krishna.github.io).
 
-## ncmpcpp and cava
+### ncmpcpp and cava
 ![Music](/nord-v1/images/music.png)
 
-## i3lock
+### i3lock
 ![Lock screen](/nord-v1/images/lock.png)
 
-## Wallpaper
+### Wallpaper
 ![Wallpaper using the Nord color scheme](/nord-v1/images/nord-arch.png)
