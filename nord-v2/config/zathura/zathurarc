@@ -1,0 +1,48 @@
+set font			"Hack 10"
+set default-fg 			"#eceff4"
+set default-bg 			"#2e3440"
+
+set completion-bg		"#2e3440"
+set completion-fg		"#d8dee9"
+set completion-highlight-bg	"#4c566a"
+set completion-highlight-fg	"#d8dee9"
+set completion-group-bg		"#2e3440"
+set completion-group-fg		"#5e81ac"
+
+set statusbar-fg		"#d8dee9"
+set statusbar-bg		"#4c566a"
+set statusbar-h-padding		10
+set statusbar-v-padding		10
+
+set tabbar-fg			"#d8dee9"
+set tabbar-bg			"#4c566a"
+set tabbar-focus-fg		"#3b4252"
+set tabbar-focus-bg		"#88c0d0"
+
+set notification-bg		"#2e3440"
+set notification-fg		"#d8dee9"
+set notification-error-bg	"#2e3440"
+set notification-error-fg	"#bf616a"
+set notification-warning-bg	"#2e3440"
+set notification-warning-fg	"#ebcb8b"
+set selection-notification	"false"
+
+set inputbar-fg			"#d8dee9"
+set inputbar-bg 		"#2e3440"
+
+set recolor			"true"
+set recolor-lightcolor		"#2e3440"
+set recolor-darkcolor		"#d8dee9"
+
+set index-fg			"#d8dee9"
+set index-bg			"#2e3440"
+set index-active-fg		"#d8dee9"
+set index-active-bg		"#4c566a"
+
+set render-loading-bg		"#2e3440"
+set render-loading-fg		"#d8dee9"
+
+set highlight-color		"#88c0d0"
+set highlight-active-color	"#5e81ac"
+
+set adjust-open			"width"

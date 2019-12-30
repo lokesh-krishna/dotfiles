@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =6
+let g:netrw_dirhist_6='/home/loki'
+let g:netrw_dirhist_5='/home/loki/.zsh'
+let g:netrw_dirhist_4='/home/loki/projects/dotfiles/config/bspwm'
+let g:netrw_dirhist_3='/home/loki/projects/dotfiles'
+let g:netrw_dirhist_2='/home/loki/.local'
+let g:netrw_dirhist_1='/home/loki/.config/sxhkd'
