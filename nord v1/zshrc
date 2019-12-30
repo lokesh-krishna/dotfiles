@@ -44,7 +44,7 @@ export EDITOR=nvim
 alias mp3='youtube-dl -x --audio-format=mp3' 
 
 # Settings for feh
-alias feh='feh --draw-filename --draw-tinted --image-bg black --scale-down --fontpath /home/loki/.local/share/fonts/Hack/ --font Hack-Regular/10'
+alias feh='feh --draw-filename --draw-tinted --image-bg black --scale-down --fontpath /usr/share/fonts/TTF/ --font Hack-Regular/30'
 
 # Backup system
 alias backup='rsync --archive --delete \

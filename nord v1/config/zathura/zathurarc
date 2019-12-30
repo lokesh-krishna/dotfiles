@@ -1,5 +1,5 @@
-set font			"Hack 9"
-set default-fg 			"#d8dee9"
+set font			"Hack 10"
+set default-fg 			"#eceff4"
 set default-bg 			"#2e3440"
 
 set completion-bg		"#2e3440"
