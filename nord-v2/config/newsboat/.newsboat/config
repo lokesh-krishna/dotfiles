@@ -1,0 +1,2 @@
+bind-key j down feedlist
+bind-key k up feedlist

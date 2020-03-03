@@ -6,19 +6,27 @@ super + Return
 
 # program launcher
 super + @space
-	rofi -modi "run,drun" -show drun -display-run '' -display-drun '' -terminal kitty
+	rofi -modi "run,drun" -show drun -display-run '' -display-drun '' -terminal kitty
 
 # lock screen
-super + shift + l
+alt + l
 	/home/loki/bin/lock.sh
 
 # take a screenshot
 super + Print
 	/home/loki/bin/screenshot.sh
 
+# take screenshot and copy to clipboard
+Print
+	/home/loki/bin/screenshot-clip.sh
+
 # take a screenshot of selected area
 super + shift + Print
 	/home/loki/bin/partial-screenshot.sh
+
+# take a screenshot of selected area and copy to clipboard
+shift + Print
+	/home/loki/bin/partial-screenshot-clip.sh
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -32,8 +40,12 @@ XF86AudioMute
 	pactl set-sink-mute 0 toggle
 
 # screen brightness
-XF86MonBrightness{Down,Up}
-    light -{U,A} 10 
+XF86MonBrightnessDown
+    light -U 10 && notify-send " Light" "Brightness: $(light)"
+
+
+XF86MonBrightnessUp
+    light -A 10 && notify-send " Light" "Brightness: $(light)"
 
 # pause audio
 XF86AudioStop
@@ -41,7 +53,7 @@ XF86AudioStop
 
 # play audio
 XF86AudioPlay
-	mpc play && notify-send "  Now Playing" "$(mpc --format '%title% \n%artist% - %album%' current)"
+	mpc play && notify-send " Now Playing" "$(mpc --format '%title% \n%artist% - %album%' current)"
 
 # next track
 XF86AudioNext
@@ -50,14 +62,21 @@ XF86AudioNext
 # previous track
 XF86AudioPrev
 	mpc prev
+# turn on DND
+super + d
+	/home/loki/bin/dnd-on.sh 
+
+# turn off DND
+super + shift + d
+	/home/loki/bin/dnd-off.sh
 
 #
 # bspwm hotkeys
 #
 
-# quit/restart bspwm
-super + alt + {q,r}
-	bspc {quit,wm -r}
+# quit bspwm
+super + alt + q
+	bspc quit
 
 # close and kill
 super + {_,shift + }w

@@ -6,7 +6,7 @@ configuration {
 	modi: 			"drun,run";
 	width: 			750;
 	lines: 			13;
-	font: 			"Hack 10, FontAwesome 10";
+	font: 			"Font Awesome 5 Brands 10, JetBrains Mono 10";
 	show-match: 		false;
 	separator-style: 	"solid";
 	hide-scrollbar: 	true;

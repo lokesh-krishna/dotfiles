@@ -40,7 +40,7 @@ export FZF_DEFAULT_OPTS='
 export EDITOR=nvim
 
 # Settings for feh
-alias feh='feh --draw-filename --draw-tinted --image-bg black --scale-down --fontpath /usr/share/fonts/TTF/ --font Hack-Regular/10'
+alias feh='feh --draw-filename --draw-tinted --auto-rotate --hide-pointer --scale-down --image-bg "#2E3440" --fontpath /home/loki/.local/share/fonts/JetBrainsMono/ --font "JetBrainsMono-Regular/10"'
 
 # Local scripts
 path+=/home/loki/bin

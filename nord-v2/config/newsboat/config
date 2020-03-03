@@ -1,0 +1,14 @@
+bind-key j down 	feedlist
+bind-key k up 		feedlist
+bind-key j down 	articlelist
+bind-key k up 		articlelist
+bind-key j down 	article
+bind-key k up 		article
+
+color background          default   default
+color listnormal          white   default
+color listfocus           blue  black   bold
+color listnormal_unread   white default
+color listfocus_unread    blue black   bold
+color info                magenta  black   bold
+color article             default   default

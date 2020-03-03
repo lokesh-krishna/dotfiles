@@ -25,11 +25,11 @@ nord15 = #B48EAD
 ;---------------------------------------
 
 [bar/nord]
-width = 1344
+width = 75%
 height = 20 
 bottom = true
 
-offset-x = 288
+offset-x = 12.5%
 offset-y = 1%
 
 border-size = 2
@@ -44,7 +44,7 @@ wm-restack = bspwm
 ;		FONTS
 ;---------------------------------------
 
-font-0 = Hack:size=10;3
+font-0 = JetBrains Mono:size=10;3
 font-1 = FontAwesome:size=10;3
 
 ;---------------------------------------
@@ -151,10 +151,10 @@ format-discharging = <ramp-capacity> <label-discharging>
 format-discharging-foreground = ${colors.nord6}
 format-discharging-background = ${colors.nord1}
 
-label-charging = " %{F#a3be8c}%{F-} %percentage% "
-label-discharging ="%percentage% "
+label-charging = " %{F#a3be8c}%{F-} %percentage%% "
+label-discharging ="%percentage%% "
 label-discharging-foreground = ${colors.nord6}
-label-full = " %{F#a3be8c}%{F-} %percentage% "
+label-full = " %{F#a3be8c}%{F-} %percentage%% "
 
 ramp-capacity-0 = " %{F#bf616a}"
 ramp-capacity-0-foreground = ${colors.nord11}

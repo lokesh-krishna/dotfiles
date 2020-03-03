@@ -1,6 +1,5 @@
 ## Configuration file for CAVA. Default values are commented out. Use either ';' or '#' for commenting.
 
-
 [general]
 
 # Smoothing mode. Can be 'normal', 'scientific' or 'waves'. DEPRECATED as of 0.6.0
@@ -25,15 +24,12 @@
 ; bar_width = 2
 ; bar_spacing = 1
 
-
 # Lower and higher cutoff frequencies for lowest and highest bars
 # the bandwidth of the visualizer.
 # Note: there is a minimum total bandwidth of 43Mhz x number of bars.
 # Cava will automatically increase the higher cutoff if a too low band is specified.
 ; lower_cutoff_freq = 50
 ; higher_cutoff_freq = 10000
-
-
 
 [input]
 
@@ -56,8 +52,6 @@
 
 ; method = fifo
 ; source = /tmp/mpd.fifo
-
-
 
 [output]
 
@@ -89,8 +83,6 @@
 ; bar_delimiter = 59
 ; frame_delimiter = 10
 
-
-
 [color]
 
 # Colors can be one of seven predefined: black, blue, cyan, green, magenta, red, white, yellow.
@@ -106,8 +98,6 @@ gradient = 1
 gradient_color_1 = '#88C0D0'
 gradient_color_2 = '#5E81AC'
 
-
-
 [smoothing]
 
 # Percentage value for integral smoothing. Takes values from 0 - 100.
@@ -122,10 +112,8 @@ gradient_color_2 = '#5E81AC'
 # Accepts only non-negative values. 50 means half gravity, 200 means double. Set to 0 to disable "drop off".
 ; gravity = 100
 
-
 # In bar height, bars that would have been lower that this will not be drawn.
 ; ignore = 0
-
 
 [eq]
 

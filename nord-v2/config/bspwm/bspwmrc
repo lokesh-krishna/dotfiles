@@ -18,8 +18,11 @@ dunst &
 # Launch imwheel to increase scroll speed
 imwheel &
 
+# Autohide the cursor when inactive
+unclutter --ignore-scrolling &
+
 # Desktops
-bspc monitor -d I II III IV V VI VII
+bspc monitor -d I II III IV V VI VII VIII IX X
 
 # Border and Gap
 bspc config border_width         2
@@ -29,7 +32,8 @@ bspc config window_gap          10
 bspc config split_ratio          0.50
 
 # Mouse
-bspc config click_to_focus	 button1
+bspc config click_to_focus	 	button1
+bspc config focus_follows_pointer 	true
 
 # Monocle mode settings
 bspc config borderless_monocle   false
@@ -44,10 +48,11 @@ bspc config presel_feedback_color	"#88c0d0"
 # Rules
 bspc rule -a Zathura desktop='^5' state=tiled
 bspc rule -a Nightly desktop='^2' state=tiled
+bspc rule -a Todoist desktop='^3' state=tiled
+bspc rule -a 'Standard Notes' desktop='^3' state=tiled
 bspc rule -a feh state=fullscreen
 
 # Rules for Firefox windows
-bspc rule -a Firefox:Browser state=floating
-bspc rule -a Firefox:Dialog state=floating
-bspc rule -a Firefox:firefox state=floating
-bspc rule -a Firefox:Prompt state=floating
+bspc rule -a Nightly:Browser state=floating
+bspc rule -a Nightly:firefox state=floating
+bspc rule -a Nightly:Firefox state=floating
