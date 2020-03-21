@@ -1,0 +1,2 @@
+#!/bin/sh
+feh --no-fehbg --bg-fill --image-bg 'black' '/home/loki/pictures/wallpapers/nord.png' 

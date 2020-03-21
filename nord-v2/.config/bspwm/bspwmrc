@@ -1,0 +1,59 @@
+#! /bin/sh
+
+# Launch sxhkd
+sxhkd &
+
+# Set the cursor
+xsetroot -cursor_name left_ptr
+
+# Launch redshift with coordinates for Kolhapur
+redshift &
+
+# Launch polybar
+polybar -r nord &
+
+# Launch notification server
+dunst &
+
+# Launch imwheel to increase scroll speed
+imwheel &
+
+# Autohide the cursor when inactive
+unclutter --ignore-scrolling &
+
+# Desktops
+bspc monitor -d I II III IV V VI VII VIII IX X
+
+# Border and Gap
+bspc config border_width         2
+bspc config window_gap          10
+
+# Configuration
+bspc config split_ratio          0.50
+
+# Mouse
+bspc config click_to_focus	 	button1
+bspc config focus_follows_pointer 	true
+
+# Monocle mode settings
+bspc config borderless_monocle   false
+bspc config gapless_monocle      true
+bspc config paddingless_monocle	 true
+
+# Colors
+bspc config normal_border_color		"#4c566a"
+bspc config focused_border_color	"#88c0d0"
+bspc config presel_feedback_color	"#88c0d0"
+
+# Rules
+bspc rule -a Zathura desktop='^5' state=tiled
+bspc rule -a Nightly desktop='^2' state=tiled
+bspc rule -a Todoist desktop='^3' state=tiled
+bspc rule -a 'Standard Notes' desktop='^3' state=tiled
+bspc rule -a Signal desktop='^4' state=pseudo-tiled
+bspc rule -a feh state=fullscreen
+
+# Rules for Firefox windows
+bspc rule -a Nightly:Browser state=floating
+bspc rule -a Nightly:firefox state=floating
+bspc rule -a Nightly:Firefox state=floating

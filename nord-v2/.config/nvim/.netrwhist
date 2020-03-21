@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =0
+let g:netrw_dirhist_0='/boot/EFI/refind/themes'
+let g:netrw_dirhist_9='/home/loki/.config/kitty'
+let g:netrw_dirhist_8='/home/loki/.config/dunst'
+let g:netrw_dirhist_7='/home/loki/.local/share/applications'
+let g:netrw_dirhist_6='/home/loki'
+let g:netrw_dirhist_5='/home/loki/.zsh'
+let g:netrw_dirhist_4='/home/loki/projects/dotfiles/config/bspwm'
+let g:netrw_dirhist_3='/home/loki/projects/dotfiles'
+let g:netrw_dirhist_2='/home/loki/.local'
+let g:netrw_dirhist_1='/home/loki/.config/sxhkd'
