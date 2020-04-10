@@ -9,7 +9,7 @@ Below is a guided tour of what this setup looks like presently:
 ### Clean
 ![Screenshot of clean desktop](/nord-v2/images/clean.png)
 ### System Information
-![neofetch](/nord-v2/images/system-information.png)
+![neofetch](/nord-v2/images/system_information.png)
 ### In Action
 ![Multiple windows](/nord-v2/images/busy.png)
 ### Zathura
@@ -17,7 +17,7 @@ Below is a guided tour of what this setup looks like presently:
 ### Rofi
 ![Rofi](/nord-v2/images/rofi.png)
 ### Dunst 
-![Notification](/nord-v2/images/clean-with-notification.png)
+![Notification](/nord-v2/images/notification.png)
 ### Firefox
 ![Firefox showing my custom start page](/nord-v2/images/firefox.png)
 
@@ -30,7 +30,7 @@ You can find my start page at [lokesh-krishna.github.io](https://github.com/loke
 ![Lock screen](/nord-v2/images/lock.png)
 
 ### Wallpaper
-![Wallpaper using the Nord color scheme](/nord-v2/images/arctic-landscape.png)
+![Wallpaper using the Nord color scheme](/nord-v2/images/nord.png)
 Based on the gorgeous [Arctic Landscape](https://github.com/arcticicestudio/arctic-landscape) by [ArcticIceStudio](https://github.com/arcticicestudio).
 
 ## Nord v1
