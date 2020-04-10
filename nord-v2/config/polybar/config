@@ -42,7 +42,7 @@ wm-restack = bspwm
 ;---------------------------------------
 
 font-0 = JetBrains Mono:size=10;3
-font-1 = Material Design Icons:size=11;3
+font-1 = Material Design Icons Desktop:size=11;3
 
 ;---------------------------------------
 ;	     MODULES LAYOUT
@@ -128,7 +128,7 @@ adapter = ACAD
 
 full-at = 99
 
-format-charging = <label-charging>
+format-charging = <animation-charging> <label-charging>
 format-charging-foreground = ${colors.nord6}
 
 format-full = <label-full>
@@ -137,7 +137,7 @@ format-full-foreground = ${colors.nord6}
 format-discharging = <ramp-capacity> <label-discharging>
 format-discharging-foreground = ${colors.nord6}
 
-label-charging = " %{F#a3be8c}󰂄%{F-} %percentage%% "
+label-charging = "%percentage%% "
 label-discharging ="%percentage%% "
 label-discharging-foreground = ${colors.nord6}
 label-full = " %{F#a3be8c}󱈑%{F-} %percentage%% "
@@ -155,6 +155,10 @@ ramp-capacity-7 = " %{F#a3be8c}󰂁"
 ramp-capacity-8 = " %{F#a3be8c}󰂂"
 ramp-capacity-9 = " %{F#a3be8c}󰁹"
 
+animation-charging-0 = " %{F#a3be8c}󱊤%{F-}"
+animation-charging-1 = " %{F#a3be8c}󱊥%{F-}"
+animation-charging-2 = " %{F#a3be8c}󱊦%{F-}"
+
 ;---------------------------------------
 ;	   AUDIO MODULE
 ;---------------------------------------
@@ -164,7 +168,7 @@ sink = alsa_output.pci-0000_00_1f.3.analog-stereo
 
 format-volume = "%{F#ebcb8b}󰕾%{F-} <label-volume> "
 
-label-muted = "%{F#eb8b8b}󰖁%{F-} Muted "
+label-muted = "%{F#eb8b8b}󰖁%{F-} Mute "
 
 ;---------------------------------------
 ;	   NETWORK MODULE
