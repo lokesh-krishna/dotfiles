@@ -76,6 +76,7 @@ label-focused-empty-padding = 1
 label-occupied = 󰻃 
 label-occupied-foreground = ${colors.nord6}
 label-occupied-padding = 1
+label-occupied-underline = ${colors.nord11}
 
 label-urgent = 󰗖
 label-urgent-foreground = ${colors.nord13}
