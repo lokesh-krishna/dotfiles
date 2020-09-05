@@ -28,7 +28,8 @@ You can find my start page at [lokesh-krishna.github.io](https://github.com/loke
 
 ### Wallpaper
 ![Wallpaper](/nord-v2/images/wallpaper.png)
-Based on the gorgeous artwork by [Denis Istomin](https://www.artstation.com/artwork/YeePYb)
+Based on the gorgeous artwork by [Denis Istomin](https://www.artstation.com/artwork/YeePYb)  
+Edited to match the Nord color scheme using [ImageGoNord](https://ign.schrodinger-hat.it/)
 
 ## Nord v1
 
