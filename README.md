@@ -27,8 +27,8 @@ You can find my start page at [lokesh-krishna.github.io](https://github.com/loke
 ![Music](/nord-v2/images/music.png)
 
 ### Wallpaper
-![Wallpaper using the Nord color scheme](/nord-v2/images/nord.png)
-Based on the gorgeous [Arctic Landscape](https://github.com/arcticicestudio/arctic-landscape) by [ArcticIceStudio](https://github.com/arcticicestudio).
+![Wallpaper](/nord-v2/images/wallpaper.png)
+Based on the gorgeous artwork by [Denis Istomin](https://www.artstation.com/artwork/YeePYb)
 
 ## Nord v1
 
