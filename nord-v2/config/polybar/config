@@ -26,14 +26,11 @@ nord15 = #B48EAD
 
 [bar/nord]
 width = 100%
-height = 22 
+height = 24 
 bottom = false
-
-border-bottom-size = 2
-border-color = ${colors.nord3}
+line-size = 3
 
 background = ${colors.nord1}
-foreground = ${colors.nord6}
 
 wm-restack = bspwm
 
@@ -48,9 +45,8 @@ font-1 = Material Design Icons Desktop:size=11;3
 ;	     MODULES LAYOUT
 ;---------------------------------------
 
-modules-left = bspwm  
-modules-center = xwindow
-modules-right = network pulseaudio battery date volume 
+modules-left = bspwm 
+modules-right = network pulseaudio battery date time volume 
 
 ;---------------------------------------
 ;	      BSPWM MODULE
@@ -61,43 +57,47 @@ type = internal/bspwm
 
 format = <label-state>
 
-label-focused-occupied = 󰻃
-label-focused-occupied-foreground = ${colors.nord8}
+ws-icon-0 = I;󰋜 
+ws-icon-1 = II;󰈹 
+ws-icon-2 = III;󰠮
+ws-icon-3 = IV;󰭹
+ws-icon-4 = V;󱓷
+ws-icon-5 = VI;󱇧
+ws-icon-6 = VII;󰑖
+ws-icon-7 = VIII;󰖲
+ws-icon-8 = IX;󰕧
+ws-icon-9 = X;󰝚
+ws-icon-default = 
+
+label-focused-occupied = %icon%
+label-focused-occupied-foreground = ${colors.nord0}
+label-focused-occupied-background = ${colors.nord8}
 label-focused-occupied-padding = 1
 
-label-focused-urgent = 󰗖
-label-focused-urgent-foreground = ${colors.nord11}
+label-focused-urgent = %icon%
+label-focused-urgent-foreground = ${colors.nord0}
+label-focused-urgent-background = ${colors.nord11}
 label-focused-urgent-padding = 1
 
-label-focused-empty = 󰝦
-label-focused-empty-foreground = ${colors.nord8}
+label-focused-empty = %icon%
+label-focused-empty-foreground = ${colors.nord0}
+label-focused-empty-background = ${colors.nord8}
 label-focused-empty-padding = 1
 
-label-occupied = 󰻃 
-label-occupied-foreground = ${colors.nord6}
+label-occupied = %icon%
+label-occupied-foreground = ${colors.nord0}
+label-occupied-background = ${colors.nord9}
 label-occupied-padding = 1
-label-occupied-underline = ${colors.nord11}
 
-label-urgent = 󰗖
-label-urgent-foreground = ${colors.nord13}
+label-urgent = %icon% 
+label-urgent-foreground = ${colors.nord0}
+label-urgent-background = ${colors.nord13}
 label-urgent-padding = 1
 
-label-empty = 󰝦
-label-empty-foreground = ${colors.nord6}
+label-empty = %icon%
+label-empty-foreground = ${colors.nord0}
+label-empty-background = ${colors.nord9}
 label-empty-padding = 1
-
-;---------------------------------------
-;	   XWINDOW MODULE
-;---------------------------------------
-
-[module/xwindow]
-type = internal/xwindow
-
-format-foreground = ${colors.nord6}
-format-padding = 1
-
-label = %{F#8fbcbb}󰖯%{F-} %title%
-label-maxlen = 60
 
 ;---------------------------------------
 ;	   DATE MODULE
@@ -110,11 +110,21 @@ interval = 60
 
 date = %a %d
 
+label = " 󰸗 %date% "
+format-foreground = ${colors.nord0}
+format-background = ${colors.nord10}
+
+;---------------------------------------
+;	   TIME MODULE
+;---------------------------------------
+[module/time]
+type = internal/date
 time = %H:%M
 
-label = "%{F#5e81ac}󰸗%{F-} %date%  %{F#b48ead}󰅐%{F-} %time%"
+label = "󰅐 %time%"
 
-format-foreground = ${colors.nord6}
+format-foreground = ${colors.nord0}
+format-background = ${colors.nord15}
 format-padding = 1
 
 ;---------------------------------------
@@ -130,35 +140,29 @@ adapter = ACAD
 full-at = 99
 
 format-charging = <animation-charging> <label-charging>
-format-charging-foreground = ${colors.nord6}
+format-charging-foreground = ${colors.nord0}
+format-charging-background = ${colors.nord14}
 
 format-full = <label-full>
-format-full-foreground = ${colors.nord6}
+format-full-foreground = ${colors.nord0}
+format-full-background = ${colors.nord14}
 
 format-discharging = <ramp-capacity> <label-discharging>
-format-discharging-foreground = ${colors.nord6}
+format-discharging-foreground = ${colors.nord0}
+format-discharging-background = ${colors.nord14}
 
 label-charging = "%percentage%% "
 label-discharging ="%percentage%% "
-label-discharging-foreground = ${colors.nord6}
-label-full = " %{F#a3be8c}󱈑%{F-} %percentage%% "
+label-discharging-foreground = ${colors.nord0}
+label-full = " 󱈑 %percentage%% "
 
-ramp-capacity-0 = " %{F#bf616a}󰁺"
-ramp-capacity-0-foreground = ${colors.nord11}
-ramp-capacity-1 = " %{F#bf616a}󰁻"
-ramp-capacity-1-foreground = ${colors.nord11}
-ramp-capacity-2 = " %{F#a3be8c}󰁼"
-ramp-capacity-3 = " %{F#a3be8c}󰁽"
-ramp-capacity-4 = " %{F#a3be8c}󰁾"
-ramp-capacity-5 = " %{F#a3be8c}󰁿"
-ramp-capacity-6 = " %{F#a3be8c}󰂀"
-ramp-capacity-7 = " %{F#a3be8c}󰂁"
-ramp-capacity-8 = " %{F#a3be8c}󰂂"
-ramp-capacity-9 = " %{F#a3be8c}󰁹"
+ramp-capacity-0 = " 󱊡"
+ramp-capacity-1 = " 󱊢"
+ramp-capacity-2 = " 󱊣"
 
-animation-charging-0 = " %{F#a3be8c}󱊤%{F-}"
-animation-charging-1 = " %{F#a3be8c}󱊥%{F-}"
-animation-charging-2 = " %{F#a3be8c}󱊦%{F-}"
+animation-charging-0 = " 󱊤"
+animation-charging-1 = " 󱊥"
+animation-charging-2 = " 󱊦"
 
 ;---------------------------------------
 ;	   AUDIO MODULE
@@ -167,9 +171,14 @@ animation-charging-2 = " %{F#a3be8c}󱊦%{F-}"
 type = internal/pulseaudio
 sink = alsa_output.pci-0000_00_1f.3.analog-stereo
 
-format-volume = "%{F#ebcb8b}󰕾%{F-} <label-volume> "
+label-volume = " 󰕾 %percentage%% "
 
-label-muted = "%{F#eb8b8b}󰖁%{F-} Mute "
+label-muted = " 󰖁 Mute "
+
+format-volume-foreground = ${colors.nord0}
+format-volume-background = ${colors.nord13}
+format-muted-foreground = ${colors.nord0}
+format-muted-background = ${colors.nord13}
 
 ;---------------------------------------
 ;	   NETWORK MODULE
@@ -180,15 +189,19 @@ interface = wlp0s20f3
 
 format-connected = <ramp-signal> <label-connected>
 format-disconnected = <label-disconnected>
-format-packetloss = "%{F#d08770}󰤫 "
+format-packetloss = "󰤫 "
 
-ramp-signal-0 = "%{F#d08770}󰤯"
-ramp-signal-1 = "%{F#d08770}󰤟"
-ramp-signal-2 = "%{F#d08770}󰤢"
-ramp-signal-3 = "%{F#d08770}󰤥"
-ramp-signal-4 = "%{F#d08770}󰤨"
+ramp-signal-0 = " 󰤯"
+ramp-signal-1 = " 󰤟"
+ramp-signal-2 = " 󰤢"
+ramp-signal-3 = " 󰤥"
+ramp-signal-4 = " 󰤨"
 
-label-disconnected = "%{F#d08770}󰤮 %{F-} Disconnected  "
-:label-connected = "%{F#eceff4}Connected  "
-label-connected = "%essid%  "
-label-connected-foreground = ${colors.nord6}
+label-disconnected = " 󰤮 Disconnected "
+:label-connected = " Connected "
+label-connected = "%essid% "
+
+format-connected-foreground = ${colors.nord0}
+format-connected-background = ${colors.nord12}
+format-disconnected-foreground = ${colors.nord0}
+format-disconnected-background = ${colors.nord12}

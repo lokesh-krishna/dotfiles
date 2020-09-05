@@ -1,6 +1,6 @@
 #!/bin/sh
 
-userresources=$HOME/.Xresources
+userresources=/home/loki/.config/X11/xresources
 usermodmap=$HOME/.Xmodmap
 sysresources=/etc/X11/xinit/.Xresources
 sysmodmap=/etc/X11/xinit/.Xmodmap
@@ -39,10 +39,7 @@ picom &
 udiskie &
 
 # set the desktop background
-~/.fehbg &
-
-# Lock the screen
-/home/loki/bin/lock.sh
+xwallpaper --stretch /home/loki/pictures/wallpapers/nord.png &
 
 # Start bspwm
 exec bspwm

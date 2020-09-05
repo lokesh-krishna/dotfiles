@@ -3,23 +3,17 @@
 # Launch sxhkd
 sxhkd &
 
-# Set the cursor
-xsetroot -cursor_name left_ptr
-
-# Launch redshift with coordinates for Kolhapur
-redshift &
-
 # Launch polybar
 polybar -r nord &
 
 # Launch notification server
 dunst &
 
-# Launch imwheel to increase scroll speed
-imwheel &
-
 # Autohide the cursor when inactive
 unclutter --ignore-scrolling &
+
+# Set the cursor
+xsetroot -cursor_name left_ptr 
 
 # Desktops
 bspc monitor -d I II III IV V VI VII VIII IX X
@@ -51,7 +45,6 @@ bspc rule -a Nightly desktop='^2' state=tiled
 bspc rule -a Todoist desktop='^3' state=tiled
 bspc rule -a 'Standard Notes' desktop='^3' state=tiled
 bspc rule -a Signal desktop='^4' state=pseudo-tiled
-bspc rule -a feh state=fullscreen
 
 # Rules for Firefox windows
 bspc rule -a Nightly:Browser state=floating

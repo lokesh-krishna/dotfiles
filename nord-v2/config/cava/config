@@ -59,7 +59,7 @@
 # 'noncurses' is for systems that does not suport ncurses.
 # 'raw' is a 16 bit data stream of the bar heights that can be used to send to other applications.
 # 'raw' defaults to 200 bars, which can be adjusted in the 'bars' option above.
-; method = ncurses
+method = ncurses
 
 # Visual channels. Can be 'stereo' or 'mono'.
 # 'stereo' mirrors both channels with low frequencies in center.
@@ -82,7 +82,6 @@
 # Use decimal value in ascii table (i.e. 59 = ';' and 10 = '\n' (line feed)).
 ; bar_delimiter = 59
 ; frame_delimiter = 10
-
 [color]
 
 # Colors can be one of seven predefined: black, blue, cyan, green, magenta, red, white, yellow.
@@ -95,8 +94,14 @@
 # or remain commented out. 1 = on, 0 = off. Warning: for certain terminal emulators cava will
 # not able to restore color definitions on exit, simply restart your terminal to restore colors.
 gradient = 1
-gradient_color_1 = '#88C0D0'
-gradient_color_2 = '#5E81AC'
+gradient_color_1 = '#8FBCBB'
+gradient_color_2 = '#88C0D0'
+gradient_color_3 = '#81A1C1'
+gradient_color_4 = '#5E81AC'
+gradient_color_5 = '#B48EAD'
+gradient_color_6 = '#EBCB8B'
+gradient_color_7 = '#D08770'
+gradient_color_8 = '#BF616A'
 
 [smoothing]
 

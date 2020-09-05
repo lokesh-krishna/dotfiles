@@ -1,9 +1,9 @@
 # The Nord Setup
 My setup is built around the excellent [Nord](https://github.com/arcticicestudio/nord) color scheme. I've taken every effort to make sure that every component of the system fits right in with the rest and looks consistent. Suggestions and critique that understand this goal of the setup are welcome.
 
-The original setup, developed in 2017, has now been updated to Nord v2 in 2019.
+The original setup, developed in 2017, has now been updated to Nord v2.1 in 2020.
 
-## Nord v2
+## Nord v2.1
 Below is a guided tour of what this setup looks like presently:
 
 ### Clean
@@ -25,9 +25,6 @@ You can find my start page at [lokesh-krishna.github.io](https://github.com/loke
 
 ### ncmpcpp and cava
 ![Music](/nord-v2/images/music.png)
-
-### i3lock
-![Lock screen](/nord-v2/images/lock.png)
 
 ### Wallpaper
 ![Wallpaper using the Nord color scheme](/nord-v2/images/nord.png)

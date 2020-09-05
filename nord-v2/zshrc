@@ -1,23 +1,16 @@
-#
-# Executes commands at the start of an interactive session.
-#
-# Authors:
-#   Sorin Ionescu <sorin.ionescu@gmail.com>
-#
-
 # Source Prezto.
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
+########################################
+# General
+########################################
+
 # Setting up the pure prompt
 fpath+=$HOME/.zsh/pure
 autoload -U promptinit; promptinit
 prompt pure
-
-########################################
-# General
-########################################
 
 # Integrate FZF with terminal color scheme
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
@@ -36,17 +29,25 @@ export FZF_DEFAULT_OPTS='
     --color=spinner:6
     --color=info:6'
 
-# Set neovim as the default text editor
-export EDITOR=nvim
+# Use Nord dircolors theme
+test -r "~/.dir_colors" && eval $(dircolors ~/.dir_colors)
 
-# Settings for feh
-alias feh='feh --draw-filename --draw-tinted --auto-rotate --hide-pointer --scale-down --image-bg "#2E3440" --fontpath /home/loki/.local/share/fonts/JetBrainsMono/ --font "JetBrainsMono-Regular/10"'
+# VI mode
+bindkey -v
+
+# Suffix aliases
+alias -s md=nvim
+alias -s png=feh
+alias -s jpg=feh
 
 # Local scripts
 path+=/home/loki/bin
 
 # Alias to add color to sdcv
 alias sdcv='sdcv --color'
+
+# Alias to sync music files between laptop and tablet
+alias music-sync='adb-sync --delete /home/loki/backups/loki_violet/Music /mnt/sdcard'
 
 ########################################
 # Color Man Pages

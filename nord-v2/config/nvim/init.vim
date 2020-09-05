@@ -20,6 +20,7 @@ Plug 'machakann/vim-sandwich'		" surround text objects
 Plug 'junegunn/goyo.vim'		" distraction free writing
 Plug 'junegunn/limelight.vim'		" hyperfocused writing
 Plug 'mhinz/vim-startify'		" start page
+Plug 'ap/vim-css-color'			" css colors highlighted
 
 " Finish initialization of vim-plug
 call plug#end()
