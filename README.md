@@ -26,6 +26,11 @@ You can find my start page at [lokesh-krishna.github.io](https://github.com/loke
 ### ncmpcpp and cava
 ![Music](/nord-v2/images/music.png)
 
+### Lock Screen
+![Lock Screen](/nord-v2/images/lock.png)
+
+Lock screen is a custom script for the excellent [i3lock-color](https://github.com/Raymo111/i3lock-color).
+
 ### Wallpaper
 ![Wallpaper](/nord-v2/images/wallpaper.png)
 Based on the gorgeous artwork by [Denis Istomin](https://www.artstation.com/artwork/YeePYb)  
