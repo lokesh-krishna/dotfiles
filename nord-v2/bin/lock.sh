@@ -5,8 +5,8 @@ i3lock --nofork                 \
     --keyhlcolor=88c0d0ff       \
     --bshlcolor=d8dee9ff	\
     --separatorcolor=00000000   \
-    --radius=75			\
-    --indpos="1800:950"		\
+    --radius=70			\
+    --indpos="1800:960"		\
     \
     --insidevercolor=00000000	\
     --insidewrongcolor=00000000 \
