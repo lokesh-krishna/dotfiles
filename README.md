@@ -31,10 +31,13 @@ You can find my start page at [lokesh-krishna.github.io](https://github.com/loke
 
 Lock screen is a custom script for the excellent [i3lock-color](https://github.com/Raymo111/i3lock-color).
 
-### Wallpaper
+### Wallpapers
 ![Wallpaper](/nord-v2/images/wallpaper.png)
 Based on the gorgeous artwork by [Denis Istomin](https://www.artstation.com/artwork/YeePYb)  
 Edited to match the Nord color scheme using [ImageGoNord](https://ign.schrodinger-hat.it/)
+
+![Lock Screen Wallpaper](/nord-v2/images/lock-wallpaper.png)
+The wallpaper was originally created by [u/KindaNeet](https://www.reddit.com/r/anime/comments/c1uqhj/i_made_a_16x9_wallpaper_out_of_the_chinese/) from the Chinese posted for _Spirited Away_ and was then upscaled by [u/The_tenebrous_night](https://www.reddit.com/r/wallpapers/comments/i8ab22/spirited_away_wallpaper/). The version in use here was edited using the aforementioned ImageGoNord. 
 
 ## Nord v1
 
