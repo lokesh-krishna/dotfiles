@@ -29,7 +29,7 @@ You can find my start page at [lokesh-krishna.github.io](https://github.com/loke
 ### Lock Screen
 ![Lock Screen](/nord-v2/images/lock.png)
 
-Lock screen is a custom script for the excellent [i3lock-color](https://github.com/Raymo111/i3lock-color).
+Lock screen is a [custom script](/nord-v2/bin/lock.sh) for the excellent [i3lock-color](https://github.com/Raymo111/i3lock-color).
 
 ### Wallpapers
 ![Wallpaper](/nord-v2/images/wallpaper.png)
