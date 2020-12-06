@@ -15,10 +15,10 @@ i3lock --nofork                 	\
     \
     --clock				\
     --timecolor=eceff4ff		\
-    --timestr="It's %I:%M %p"		\
+    --timestr="%I:%M %p"		\
     --time-font="Calvin and Hobbes"	\
-    --timesize=125			\
-    --timepos="1500:850"		\
+    --timesize=150			\
+    --timepos="1500:875"		\
     --timecolor=2e3440ff		\
     \
     --datecolor=d8dee9ff		\
@@ -26,7 +26,7 @@ i3lock --nofork                 	\
     --datecolor=2e3440ff		\
     --date-font="Calvin and Hobbes"	\
     --datesize=95			\
-    --datepos="tx:1000"	\
+    --datepos="tx:1020"	\
     \
     --verif-font="Calvin and Hobbes"	\
     --verifsize=150			\
