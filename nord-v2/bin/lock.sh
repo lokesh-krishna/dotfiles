@@ -1,40 +1,39 @@
 #!/bin/sh
-i3lock --nofork                 \
-    --ignore-empty-password	\
-    --linecolor=00000000        \
-    --keyhlcolor=ebcb8b00       \
-    --bshlcolor=d8dee900	\
-    --separatorcolor=00000000   \
-    --radius=0			\
-    --indpos="1475:700"		\
+i3lock --nofork                 	\
+    --ignore-empty-password		\
     \
-    --insidevercolor=00000000	\
-    --insidewrongcolor=00000000 \
-    --insidecolor=00000000	\
+    --indicator				\
+    --bar-indicator			\
+    --bar-position="1910"		\
+    --bar-base-width="10"		\
+    --bar-orientation=vertical		\
+    --bar-color=2e3440			\
+    --ringvercolor=88c0d0		\
+    --ringwrongcolor=bf616a		\
+    --bshlcolor=5e81ac			\
+    --keyhlcolor=a3be8c			\
     \
-    --ringcolor=e59d1700        \
-    --ringvercolor=a3be8c00     \
-    --ringwrongcolor=bf616a00   \
-    \
-    --clock			\
-    --timecolor=eceff4ff	\
-    --timestr="%I:%M %p"	\
+    --clock				\
+    --timecolor=eceff4ff		\
+    --timestr="It's %I:%M %p"		\
     --time-font="Calvin and Hobbes"	\
-    --timesize=125		\
-    --timepos="1425:900"		\
-    --timecolor=2e3440ff	\
+    --timesize=125			\
+    --timepos="1415:900"		\
+    --timecolor=2e3440ff		\
     \
-    --datecolor=d8dee9ff	\
-    --datestr="%A, %d %B"	\
-    --datecolor=2e3440ff	\
+    --datecolor=d8dee9ff		\
+    --datestr="%A, %d %B"		\
+    --datecolor=2e3440ff		\
     --date-font="Calvin and Hobbes"	\
-    --datesize=95		\
+    --datesize=95			\
     --datepos="tx:1025"	\
     \
-    --veriftext=""		\
-    --wrongtext=""		\
-    \
-    --indicator			\
+    --verif-font="Calvin and Hobbes"	\
+    --verifsize=150			\
+    --veriftext="Welcome home!"		\
+    --wrong-font="Calvin and Hobbes"	\
+    --wrongsize=150			\
+    --wrongtext="No Entry!"		\
     \
     --image=/home/loki/pictures/wallpapers/nord_calvin-and-hobbes.png
 
