@@ -4,9 +4,9 @@ i3lock --nofork                 	\
     \
     --indicator				\
     --bar-indicator			\
-    --bar-position="1910"		\
+    --bar-position="1070"		\
     --bar-base-width="10"		\
-    --bar-orientation=vertical		\
+    --bar-orientation=horizontal	\
     --bar-color=2e3440			\
     --ringvercolor=88c0d0		\
     --ringwrongcolor=bf616a		\
@@ -18,7 +18,7 @@ i3lock --nofork                 	\
     --timestr="It's %I:%M %p"		\
     --time-font="Calvin and Hobbes"	\
     --timesize=125			\
-    --timepos="1415:900"		\
+    --timepos="1430:850"		\
     --timecolor=2e3440ff		\
     \
     --datecolor=d8dee9ff		\
@@ -26,7 +26,7 @@ i3lock --nofork                 	\
     --datecolor=2e3440ff		\
     --date-font="Calvin and Hobbes"	\
     --datesize=95			\
-    --datepos="tx:1025"	\
+    --datepos="tx:1000"	\
     \
     --verif-font="Calvin and Hobbes"	\
     --verifsize=150			\
