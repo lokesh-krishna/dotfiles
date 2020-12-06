@@ -18,7 +18,7 @@ i3lock --nofork                 	\
     --timestr="It's %I:%M %p"		\
     --time-font="Calvin and Hobbes"	\
     --timesize=125			\
-    --timepos="1430:850"		\
+    --timepos="1500:850"		\
     --timecolor=2e3440ff		\
     \
     --datecolor=d8dee9ff		\
