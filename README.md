@@ -1,10 +1,10 @@
 # The Nord Setup
 My setup is built around the excellent [Nord](https://github.com/arcticicestudio/nord) color scheme. I've taken every effort to make sure that every component of the system fits right in with the rest and looks consistent. Suggestions and critique that understand this goal of the setup are welcome.
 
-The original setup, developed in 2017, was updated to Nord v2.1 in early 2020. I then made the move from bspwm to Sway and this resulted in the current iteration that I'm calling Nord v3.
+The original setup, developed in 2017, was updated to Nord v2.1 in early 2020. I then made the move from bspwm to Sway in December 2020 and this resulted in the current iteration that I'm calling Nord v3.
 
 ## Nord v3
-Below is a guided tour
+Below is a guided tour of my present setup:
 
 ### Clean
 ![Screenshot of clean desktop](/nord-v3/images/clean.png)
