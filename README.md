@@ -20,10 +20,12 @@ Below is a guided tour of my present setup:
 ![Notification](/nord-v3/images/notification.png)
 ### Firefox
 ![Firefox](/nord-v3/images/firefox.png)
-
 ### ncmpcpp and cava
 ![Music](/nord-v3/images/music.png)
-
+### neomutt
+![Email](/nord-v3/images/neomutt.png)
+### Swaynag
+![Swaynag](/nord-v3/images/swaynag.png)
 ### Lock Screen (Swaylock)
 ![Lock Screen](/nord-v3/images/lock.png)
 
