@@ -1,10 +1,42 @@
 # The Nord Setup
 My setup is built around the excellent [Nord](https://github.com/arcticicestudio/nord) color scheme. I've taken every effort to make sure that every component of the system fits right in with the rest and looks consistent. Suggestions and critique that understand this goal of the setup are welcome.
 
-The original setup, developed in 2017, has now been updated to Nord v2.1 in 2020.
+The original setup, developed in 2017, was updated to Nord v2.1 in early 2020. I then made the move from bspwm to Sway and this resulted in the current iteration that I'm calling Nord v3.
+
+## Nord v3
+Below is a guided tour
+
+### Clean
+![Screenshot of clean desktop](/nord-v3/images/clean.png)
+### System Information
+![pfetch](/nord-v3/images/system-information.png)
+### In Action
+![Multiple windows](/nord-v3/images/busy.png)
+### Zathura
+![Zathura](/nord-v3/images/zathura.png)
+### Wofi
+![Wofi](/nord-v3/images/wofi.png)
+### Mako 
+![Notification](/nord-v3/images/notification.png)
+### Firefox
+![Firefox](/nord-v3/images/firefox.png)
+
+### ncmpcpp and cava
+![Music](/nord-v3/images/music.png)
+
+### Lock Screen (Swaylock)
+![Lock Screen](/nord-v3/images/lock.png)
+
+### Wallpapers
+![Wallpaper](/nord-v3/images/wallpaper.png)
+Based on the gorgeous artwork by [Alena Aenami](https://aenamiart.artstation.com/projects/PogY81)  
+Edited to match the Nord color scheme using [ImageGoNord](https://ign.schrodinger-hat.it/)
+
+![Lock Screen Wallpaper](/nord-v2/images/lock-wallpaper-edit.png)
+I'm not sure where I got the original from but you can find it in the images directory. I'm using an edit created using the aforementioned ImageGoNord.
 
 ## Nord v2.1
-Below is a guided tour of what this setup looks like presently:
+Below is a guided tour through what my system looked like in its bspwm days.
 
 ### Clean
 ![Screenshot of clean desktop](/nord-v2/images/clean.png)

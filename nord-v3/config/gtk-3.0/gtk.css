@@ -1,0 +1,14 @@
+vte-terminal {
+    padding: 10px 10px 10px 10px;
+}
+
+.deadd-noti-center {
+    font-family: monospace;
+    font-size: 10px;
+}
+
+label.deadd-noti-center.noti-center.date {
+	font-size: 45px;
+}
+
+
