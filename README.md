@@ -3,6 +3,13 @@ My setup is built around the excellent [Nord](https://github.com/arcticicestudio
 
 The original setup, developed in 2017, was updated to Nord v2.1 in early 2020. I then made the move from bspwm to Sway in December 2020 and this resulted in the current iteration that I'm calling Nord v3.
 
+The following are the main components of this setup:
+- Sway (window manager)
+- Waybar (status bar)
+- Wofi (application launcher)
+- Mako (notification daemon)
+- Swaylock-Effects (lock screen)
+
 ## Nord v3
 Below is a guided tour of my present setup:
 
@@ -26,7 +33,7 @@ Below is a guided tour of my present setup:
 ![Email](/nord-v3/images/neomutt.png)
 ### Swaynag
 ![Swaynag](/nord-v3/images/swaynag.png)
-### Lock Screen (Swaylock)
+### Lock Screen (Swaylock-Effects)
 ![Lock Screen](/nord-v3/images/lock.png)
 
 ### Wallpapers
