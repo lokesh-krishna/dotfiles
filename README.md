@@ -36,6 +36,12 @@ Below is a guided tour of my present setup:
 ### Lock Screen (Swaylock-Effects)
 ![Lock Screen](/nord-v3/images/lock.png)
 
+### Fonts
+The fonts in use are -
+- [JetBrains Mono](https://github.com/JetBrains/JetBrainsMono) as the monospace font
+- [Inter](https://github.com/rsms/inter) as the proportional font
+- [Material Design Icons Desktop](https://github.com/Templarian/MaterialDesign-Font) as the icon font (as seen in the status bar)
+
 ### Wallpapers
 ![Wallpaper](/nord-v3/images/wallpaper.png)
 Based on the gorgeous artwork by [Alena Aenami](https://aenamiart.artstation.com/projects/PogY81)  
