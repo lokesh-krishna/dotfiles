@@ -39,7 +39,7 @@ Below is a guided tour of my present setup:
 ### Fonts
 The fonts in use are -
 - [JetBrains Mono](https://github.com/JetBrains/JetBrainsMono) as the monospace font
-- [Inter](https://github.com/rsms/inter) as the proportional font
+- [Inter](https://github.com/rsms/inter) as the proportional sans-serif font for UI
 - [Material Design Icons Desktop](https://github.com/Templarian/MaterialDesign-Font) as the icon font (as seen in the status bar)
 
 ### Wallpapers
