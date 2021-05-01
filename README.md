@@ -35,6 +35,8 @@ Below is a guided tour of my present setup:
 ![Swaynag](/nord-v3/images/swaynag.png)
 ### Lock Screen (Swaylock-Effects)
 ![Lock Screen](/nord-v3/images/lock.png)
+### Alternate Lock Screen 
+![Alt Lock Screen](/nord-v3/images/lock-zelda.png)
 
 ### Fonts
 The fonts in use are -
@@ -49,6 +51,8 @@ Edited to match the Nord color scheme using [ImageGoNord](https://ign.schrodinge
 
 ![Lock Screen Wallpaper](/nord-v2/images/lock-wallpaper-edit.png)
 I'm not sure where I got the original from but you can find it in the images directory. I'm using an edit created using the aforementioned ImageGoNord.
+
+The wallpaper used in the alternate lock screen is by the brilliant [Matt Vince](https://www.mattvince.com/product/zelda-x-ghibli-desktop-wallpaper-mastersword/).
 
 ## Nord v2.1
 Below is a guided tour through what my system looked like in its bspwm days.
