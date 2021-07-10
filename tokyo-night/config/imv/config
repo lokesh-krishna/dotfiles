@@ -1,0 +1,6 @@
+# Styling
+[options]
+background = #24283b
+fullscreen = true
+overlay = true
+overlay_font = monospace:12
