@@ -1,8 +1,8 @@
 # My Dotfiles
 
 ### Table of Contents
-[Tokyo Night](#the-tokyo-night-setup)
-[Nord](#the-nord-setup)
+- [Tokyo Night](#the-tokyo-night-setup)
+- [Nord](#the-nord-setup)
 
 ## The Tokyo Night Setup
 After discovering [Tokyo Night](https://github.com/enkia/tokyo-night-vscode-theme) thanks to an excellent [Neovim port](https://github.com/folke/tokyonight.nvim), I couldn't help but move my entire setup over to it. The following is what resulted and I must admit that this is the most satisfied I've ever been with a setup of mine. 
