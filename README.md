@@ -1,10 +1,10 @@
 # My Dotfiles
 
-### Table of Contents
+## Table of Contents
 - [Tokyo Night](#the-tokyo-night-setup)
 - [Nord](#the-nord-setup)
 
-## The Tokyo Night Setup
+## The Tokyo Night Setup (July 2021)
 After discovering [Tokyo Night](https://github.com/enkia/tokyo-night-vscode-theme) thanks to an excellent [Neovim port](https://github.com/folke/tokyonight.nvim), I couldn't help but move my entire setup over to it. The following is what resulted and I must admit that this is the most satisfied I've ever been with a setup of mine. 
 
 The following are the main components of this setup and are shared with the Sway based Nord setup:
@@ -52,7 +52,7 @@ Found on [wallhaven](https://wallhaven.cc/w/ne8ylo)
 ## The Nord Setup
 My setup is built around the excellent [Nord](https://github.com/arcticicestudio/nord) color scheme. I've taken every effort to make sure that every component of the system fits right in with the rest and looks consistent. Suggestions and critique that understand this goal of the setup are welcome.
 
-The original setup, developed in 2017, was updated to Nord v2.1 in early 2020. I then made the move from bspwm to Sway in December 2020 and this resulted in the current iteration that I'm calling Nord v3.
+The original setup, developed in 2017, was updated to Nord v2.1 in late 2019. I then made the move from bspwm to Sway in December 2020 and this resulted in the current iteration that I'm calling Nord v3.
 
 The following are the main components of this setup:
 - Sway (window manager)
@@ -61,9 +61,10 @@ The following are the main components of this setup:
 - Mako (notification daemon)
 - Swaylock-Effects (lock screen)
 
-## Nord v3
+## Nord v3 (December 2020)
 Below is a guided tour of my present setup:
 
+### Screenshots
 #### Clean
 ![Screenshot of clean desktop](/nord-v3/images/clean.png)
 #### System Information
@@ -105,9 +106,10 @@ I'm not sure where I got the original from but you can find it in the images dir
 
 The wallpaper used in the alternate lock screen is by the brilliant [Matt Vince](https://www.mattvince.com/product/zelda-x-ghibli-desktop-wallpaper-mastersword/).
 
-## Nord v2.1
+## Nord v2.1 (December 2019)
 Below is a guided tour through what my system looked like in its bspwm days.
 
+### Screenshots
 #### Clean
 ![Screenshot of clean desktop](/nord-v2/images/clean.png)
 #### System Information
@@ -141,10 +143,11 @@ Edited to match the Nord color scheme using [ImageGoNord](https://ign.schrodinge
 ![Lock Screen Wallpaper](/nord-v2/images/lock-wallpaper-edit.png)
 I'm not sure where I got the original from but you can find it in the images directory. I'm using an edit created using the aforementioned ImageGoNord.
 
-## Nord v1
+## Nord v1 (December 2017)
 
 This is the setup as it was originally created in 2017.
 
+### Screenshots
 #### Clean
 ![Screenshot of clean desktop](/nord-v1/images/clean.png)
 #### System Information
