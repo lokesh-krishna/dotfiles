@@ -3,7 +3,7 @@
 ## Table of Contents
 - [Tokyo Night](#the-tokyo-night-setup)
 - [Nord](#the-nord-setup)
-	- [Nord v3](nord-v3-(december-2020))
+	- [Nord v3](nord-v3-december-2020)
 	- [Nord v2.1](nord-v2.1-(december-2019))
 	- [Nord v1](nord-v1-(december-2017))
 
