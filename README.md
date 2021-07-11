@@ -3,6 +3,9 @@
 ## Table of Contents
 - [Tokyo Night](#the-tokyo-night-setup)
 - [Nord](#the-nord-setup)
+	- [Nord v3](nord-v3-(december-2020))
+	- [Nord v2.1](nord-v2.1-(december-2019))
+	- [Nord v1](nord-v1-(december-2017))
 
 ## The Tokyo Night Setup (July 2021)
 After discovering [Tokyo Night](https://github.com/enkia/tokyo-night-vscode-theme) thanks to an excellent [Neovim port](https://github.com/folke/tokyonight.nvim), I couldn't help but move my entire setup over to it. The following is what resulted and I must admit that this is the most satisfied I've ever been with a setup of mine. 
