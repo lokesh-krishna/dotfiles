@@ -17,6 +17,7 @@ The following are the main components of this setup and are shared with the Sway
 The fonts in use are -
 - [mononoki](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Mononoki) as the monospace font
 - [Inter](https://github.com/rsms/inter) as the proportional sans-serif font for UI
+- [Calvin and Hobbes](https://www.dafont.com/calvin-and-hobbes.font) for the lock screen
 - [Material Design Icons Desktop](https://github.com/Templarian/MaterialDesign-Font) as the icon font (as seen in the status bar)
 
 ### Screenshots
@@ -46,7 +47,7 @@ The fonts in use are -
 As found on [wallhaven](https://wallhaven.cc/w/wq1wlr), by the brilliant [Denis Istomin](https://www.artstation.com/istomin_denis).
 
 ![Lock Screen Wallpaper](/tokyo-night/images/lock-wallpaper.jpg)
-Found on [wallhaven](https://wallhaven.cc/w/9mzew1), by the brilliant [BisBiswas](https://www.deviantart.com/bisbiswas).
+Found on [wallhaven](https://wallhaven.cc/w/ne8ylo)
 
 ## The Nord Setup
 My setup is built around the excellent [Nord](https://github.com/arcticicestudio/nord) color scheme. I've taken every effort to make sure that every component of the system fits right in with the rest and looks consistent. Suggestions and critique that understand this goal of the setup are welcome.
