@@ -34,6 +34,9 @@ The fonts in use are -
 ![Screenshot of music player and visualiser](/tokyo-night/images/music.png)
 #### Firefox
 ![Screenshot of Firefox](/tokyo-night/images/firefox.png)
+
+The theme in use was generated on [Firefox Color](https://color.firefox.com), and can be found here: [Tokyo Night Storm for Firefox](https://color.firefox.com/?theme=XQAAAAKPAgAAAAAAAABBqYhm849SCicxcUJJ2CuG_ebZUZXOFqpMUXOqPCZ36qSRJkXN52FbbTjiyK1MWFJNETZQ0wYF4uVCIywstutBMeAW7Obsj80UcPJQAnIVpdPOctZ5qwuxzdELFY4rFOFPOTJ56RTVDwA4OBpstebirCu7hY0081_kMAs5kyLOhcBXVznGEJZ8hLEKcsRDWIpmds_f9Bz4MLMjGF7kJmKEH1RnLL_dJvGnMgclfyzqTqHxYRhUWrgMfQmbcvGavbRFEetLZGVRbQ5P8k0F0PyfAFgTc6TBQIiKVQa2zX8gZ3Gru31J5KGfZrIaMw2B-eKScfJjrqEILop2n4DLLEe_lqL3ujDgM0Uv8i9nwGVvvQNj_vGGxQ)
+
 #### Swaynag
 ![Screenshot of swaynag](/tokyo-night/images/swaynag.png)
 #### System Information
