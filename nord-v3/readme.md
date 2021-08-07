@@ -1,5 +1,12 @@
-## Nord v3 (December 2020)
-Below is a guided tour of my final [Nord](https://nordtheme.com)-based setup
+<p align="center">
+  <h2 align="center">All I Want (December 2020)</h2>
+</p>
+
+<p align="center">
+    <a href="https://nordtheme.com">
+        <img src="https://img.shields.io/static/v1?label=Powered%20By&message=Nord&color=88c0d0&style=for-the-badge&labelColor=2e3440" />
+    </a>
+</p>
 
 ### Screenshots
 #### Clean
