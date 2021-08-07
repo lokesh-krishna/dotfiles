@@ -1,5 +1,5 @@
 <p align="center">
-  <h2 align="center">Nord v2 (December 2019)</h2>
+  <h2 align="center">Solitude (December 2019)</h2>
 </p>
 
 <p align="center">
