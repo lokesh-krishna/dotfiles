@@ -7,8 +7,6 @@
         <img src="https://img.shields.io/static/v1?label=Powered%20By&message=Tokyo%20Night&color=73daca&style=for-the-badge&labelColor=23283b" />
     </a>
 </p>
-
-## The Tokyo Night Setup (July 2021)
 After discovering [Tokyo Night](https://github.com/enkia/tokyo-night-vscode-theme) thanks to an excellent [Neovim port](https://github.com/folke/tokyonight.nvim), I couldn't help but move my entire setup over to it. The following is what resulted ~~and I must admit that this is the most satisfied I've ever been with a setup of mine.~~ (check [Sakura](https://github.com/lokesh-krishna/dotfiles/tree/main/mountain/) to see what changed my mind).
 
 The following are the main components of this setup and are shared with the Sway based Nord setup:
