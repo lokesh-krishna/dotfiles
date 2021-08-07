@@ -1,5 +1,5 @@
 <p align="center">
-  <h2 align="center">Nord v1 (December 2017)</h2>
+  <h2 align="center">Nord Desktop (December 2017)</h2>
 </p>
 
 <p align="center">
