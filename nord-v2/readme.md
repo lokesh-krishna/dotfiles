@@ -4,7 +4,7 @@
 
 <p align="center">
     <a href="https://nordtheme.com">
-        <img src="https://img.shields.io/static/v1?label=Powered%20By&message=Nord&color=88c0d0&style=for-the-badge&labelColor=2e3440" />
+        <img src="https://img.shields.io/static/v1?label=Inspired%20By&message=Nord&color=88c0d0&style=for-the-badge&labelColor=2e3440" />
     </a>
 </p>
 Below is a guided tour through what my system looked like in its bspwm days.
