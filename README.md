@@ -11,7 +11,7 @@ Welcome to my dotfiles repo. Below you'll find a list of all the setups I've use
 ![Screenshot of clean system](/mountain/images/clean.png)
 Details and resources at: [Sakura](https://github.com/lokesh-krishna/dotfiles/tree/main/mountain)
 
-## Star Fishing
+## Fishing for Stars
 ![Screenshot of clean system](/tokyo-night/images/clean.png)
 Details and resources at: [Tokyo Night](https://github.com/lokesh-krishna/dotfiles/tree/main/tokyo-night)
 
