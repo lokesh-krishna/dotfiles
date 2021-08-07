@@ -4,7 +4,7 @@
 
 <p align="center">
     <a href="https://github.com/enkia/tokyo-night-vscode-theme">
-        <img src="https://img.shields.io/static/v1?label=Powered%20By&message=Tokyo%20Night&color=73daca&style=for-the-badge&labelColor=23283b" />
+        <img src="https://img.shields.io/static/v1?label=Inspired%20By&message=Tokyo%20Night&color=7aa2f7&style=for-the-badge&labelColor=24283b" />
     </a>
 </p>
 
