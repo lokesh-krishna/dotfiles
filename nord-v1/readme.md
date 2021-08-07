@@ -1,4 +1,12 @@
-## Nord v1 (December 2017)
+<p align="center">
+  <h2 align="center">Nord v1 (December 2017)</h2>
+</p>
+
+<p align="center">
+    <a href="https://nordtheme.com">
+        <img src="https://img.shields.io/static/v1?label=Powered%20By&message=Nord&color=88c0d0&style=for-the-badge&labelColor=2e3440" />
+    </a>
+</p>
 
 This is the setup as it was originally created in 2017.
 
