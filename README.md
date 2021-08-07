@@ -9,7 +9,7 @@ Welcome to my dotfiles repo. Below you'll find a list of all the setups I've use
 ---
 ## Sakura
 ![Screenshot of clean system](/mountain/images/clean.png)
-Details and resources at: [Sakura](https://github.com/lokesh-krishna/dotfiles/tree/main/mountain)
+Details and resources at: [Mountain](https://github.com/lokesh-krishna/dotfiles/tree/main/mountain)
 
 ## Fishing for Stars
 ![Screenshot of clean system](/tokyo-night/images/clean.png)
