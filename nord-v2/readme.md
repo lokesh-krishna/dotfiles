@@ -1,6 +1,7 @@
 ## Nord v2.1 (December 2019)
 Below is a guided tour through what my system looked like in its bspwm days.
 
+
 ### Screenshots
 #### Clean
 ![Screenshot of clean desktop](/nord-v2/images/clean.png)
