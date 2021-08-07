@@ -9,20 +9,20 @@ Welcome to my dotfiles repo. Below you'll find a list of all the setups I've use
 ---
 ## Sakura
 ![Screenshot of clean system](/mountain/images/clean.png)
-Details and resources at: [Sakura](https://github.com/enkia/tokyo-night-vscode-theme)
+Details and resources at: [Sakura](https://github.com/lokesh-krishna/dotfiles/tree/main/mountain)
 
 ## Star Fishing
 ![Screenshot of clean system](/tokyo-night/images/clean.png)
-Details and resources at: [Tokyo Night](https://github.com/enkia/tokyo-night-vscode-theme)
+Details and resources at: [Tokyo Night](https://github.com/lokesh-krishna/dotfiles/tree/main/tokyo-night)
 
 ## All I Want
 ![Screenshot of clean system](/nord-v3/images/clean.png)
-Details and resources at: [Nord v3](https://github.com/enkia/tokyo-night-vscode-theme)
+Details and resources at: [Nord v3](https://github.com/lokesh-krishna/dotfiles/tree/main/nord-v3)
 
 ## Solitude
 ![Screenshot of clean system](/nord-v2/images/clean.png)
-Details and resources at: [Nord v2.1](https://github.com/enkia/tokyo-night-vscode-theme)
+Details and resources at: [Nord v2.1](https://github.com/lokesh-krishna/dotfiles/tree/main/nord-v2)
 
 ## Nord Desktop
 ![Screenshot of clean system](/nord-v1/images/clean.png)
-Details and resources at: [Nord v1](https://github.com/enkia/tokyo-night-vscode-theme)
+Details and resources at: [Nord v1](https://github.com/lokesh-krishna/dotfiles/tree/main/nord-v1)
