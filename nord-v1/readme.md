@@ -4,7 +4,7 @@
 
 <p align="center">
     <a href="https://nordtheme.com">
-        <img src="https://img.shields.io/static/v1?label=Inspired%20By&message=Nord&color=88c0d0&style=for-the-badge&labelColor=2e3440" />
+        <img src="https://github.com/lokesh-krishna/dotfiles/blob/main/images/inspired-by-nord.svg" />
     </a>
 </p>
 
