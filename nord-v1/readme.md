@@ -1,5 +1,6 @@
 <p align="center">
-  <h2 align="center">Nord Desktop (December 2017)</h2>
+    <img src="https://github.com/lokesh-krishna/dotfiles/blob/main/nord-v1/images/hero.png" width="1920" />
+    <h2 align="center"></h2>
 </p>
 
 <p align="center">
