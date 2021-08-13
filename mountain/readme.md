@@ -1,5 +1,6 @@
 <p align="center">
-  <h2 align="center">Sakura (Augst 2021)</h2>
+    <img src="https://github.com/lokesh-krishna/dotfiles/blob/main/mountain/images/hero.png" width="1920" />
+    <h2 align="center"></h2>
 </p>
 
 <p align="center">
