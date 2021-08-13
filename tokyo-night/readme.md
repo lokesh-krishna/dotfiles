@@ -1,5 +1,6 @@
 <p align="center">
-  <h2 align="center">Fishing for Stars (July 2021)</h2>
+    <img src="https://github.com/lokesh-krishna/dotfiles/blob/main/tokyo-night/images/hero.png" width="1920" />
+    <h2 align="center"></h2>
 </p>
 
 <p align="center">
