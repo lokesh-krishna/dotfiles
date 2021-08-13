@@ -1,5 +1,6 @@
 <p align="center">
-  <h2 align="center">All I Want (December 2020)</h2>
+    <img src="https://github.com/lokesh-krishna/dotfiles/blob/main/nord-v3/images/hero.png" width="1920" />
+    <h2 align="center"></h2>
 </p>
 
 <p align="center">
