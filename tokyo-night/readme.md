@@ -13,18 +13,38 @@
 
 After discovering [Tokyo Night](https://github.com/enkia/tokyo-night-vscode-theme) thanks to an excellent [Neovim port](https://github.com/folke/tokyonight.nvim), I couldn't help but move my entire setup over to it. The following is what resulted ~~and I must admit that this is the most satisfied I've ever been with a setup of mine.~~ (check [Sakura](https://github.com/lokesh-krishna/dotfiles/tree/main/mountain/) to see what changed my mind).
 
-The following are the main components of this setup and are shared with the Sway based Nord setup:
-- Sway (window manager)
-- Waybar (status bar)
-- Wofi (application launcher)
-- Mako (notification daemon)
+The following are the UI components of this setup:
+- window manager: [sway](https://swaywm.org/)
+- statusbar: [waybar](https://github.com/Alexays/Waybar)
+- application launcher: [wofi](https://hg.sr.ht/~scoopta/wofi)
+- notification daemon: [mako](https://github.com/emersion/mako)
+- lock screen: [swaylock-effects](https://github.com/mortie/swaylock-effects)
 
-### Fonts
-The fonts in use are -
-- [mononoki](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Mononoki) as the monospace font
-- [Inter](https://github.com/rsms/inter) as the proportional sans-serif font for UI
-- [Calvin and Hobbes](https://www.dafont.com/calvin-and-hobbes.font) for the lock screen
-- [Material Design Icons Desktop](https://github.com/Templarian/MaterialDesign-Font) as the icon font (as seen in the status bar)
+The following are the programs used in this setup:
+- terminal: [kitty](https://sw.kovidgoyal.net/kitty/)
+- editor: [neovim](https://neovim.io/)
+- browsers
+	- web: [qutebrowser](https://qutebrowser.org/)
+	- gemini: [amfora](https://github.com/makeworld-the-better-one/amfora)
+- email client: [neomutt](https://neomutt.org/)
+- irc client: [catgirl](https://git.causal.agency/catgirl/about/)
+- document viewer: [zathura](https://pwmt.org/projects/zathura/)
+- music
+	- music player: [ncmpcpp](https://github.com/ncmpcpp/ncmpcpp)
+	- visualiser: [cava](https://github.com/ncmpcpp/ncmpcpp)
+- system monitor: [byptop](https://github.com/aristocratos/bpytop)
+- image viewer: [imv](https://github.com/eXeC64/imv)
+- media player: [mpv](https://mpv.io/)
+- file manager: [ranger](https://github.com/ranger/ranger)
+- calendar: [khal](https://github.com/pimutils/khal)
+- to-dos: [todoman](https://github.com/pimutils/todoman)
+
+The typefaces used in this setup are:
+- terminal/monospace: [mononoki](http://madmalik.github.io/mononoki/), specifically the [nerd fonts version](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Mononoki)
+- ui/proportional/sans-serif: [inter](https://rsms.me/inter/)
+- serif: [newsreader](https://github.com/productiontype/Newsreader)
+- lockscreen: [calvin and hobbes](https://www.dafont.com/calvin-and-hobbes.font)
+- icons: [material design icons desktop](https://github.com/Templarian/MaterialDesign-Font)
 
 ### Screenshots
 #### Clean
