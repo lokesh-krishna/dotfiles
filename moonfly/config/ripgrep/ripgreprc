@@ -1,0 +1,10 @@
+# Colors
+--colors
+match:bg:blue
+--colors
+match:fg:black
+--colors
+line:fg:cyan
+
+# Options
+--smart-case

@@ -1,0 +1,2 @@
+--geo-bypass
+-o ~/videos/youtube/%(title)s.%(ext)s

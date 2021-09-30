@@ -1,0 +1,9 @@
+set font                    "monospace 12"
+et selection-notification	"true"
+set selection-clipboard		"clipboard"
+set guioptions			    "sv"
+set scroll-page-aware		"true"
+set statusbar-home-tilde	"true"
+set recolor			        "true"
+set adjust-open			    "width"
+include moonfly

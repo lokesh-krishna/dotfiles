@@ -1,0 +1,17 @@
+[custom]
+font=monospace 12
+dismiss-button=Dismiss
+background=080808
+border=303030
+border-bottom=303030
+button-background=303030
+text=c6c6c6
+border-bottom-size=2
+message-padding=5
+details-border-size=2
+button-border-size=0
+button-gap=5
+button-dismiss-gap=5
+button-margin-right=5
+button-padding=5
+

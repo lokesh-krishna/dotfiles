@@ -9,6 +9,14 @@ Welcome to my dotfiles repo. Below you'll find a list of all the setups I've use
 ---
 <body>
 	<h2 align="center">
+		<a href="https://github.com/lokesh-krishna/dotfiles/tree/main/moonfly">Cotton Candy Factory</a>
+	</h2>
+</body>
+
+![Screenshot of clean system](/moonfly/images/clean.png)
+
+<body>
+	<h2 align="center">
 		<a href="https://github.com/lokesh-krishna/dotfiles/tree/main/mountain">Sakura/Neon Sunrise</a>
 	</h2>
 </body>

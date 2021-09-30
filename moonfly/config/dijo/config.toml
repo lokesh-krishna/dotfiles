@@ -1,0 +1,9 @@
+[look]
+true_chr = ""
+false_chr = ""
+future_chr = ""
+
+[colors]
+reached = "#36c692"
+todo = "#e2637f"
+inactive = "#626262"

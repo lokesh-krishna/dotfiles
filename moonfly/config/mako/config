@@ -1,0 +1,24 @@
+layer=top
+markup=1
+anchor=bottom-right
+background-color=#080808
+text-color=#c6c6c6
+width=450
+height=200
+max-icon-size=96
+icon-location=right
+margin=0,30,25
+padding=15,10,15
+border-size=2
+border-color=#303030
+progress-color=over #303030
+border-radius=25
+default-timeout=10000
+group-by=summary
+format=<span font="OperatorMonoSSm Nerd Font weight=325 Italic" size="12288">%s</span>\n<span font="OperatorMonoSSm Nerd Font weight=325" size="12288">%b</span>
+
+[grouped]
+format=<span font="OperatorMonoSSm Nerd Font weight=325 Italic" size="12288">%s</span>\n<span font="OperatorMonoSSm Nerd Font weight=325" size="12288">%b</span>
+
+[mode=do-not-disturb]
+invisible=1

@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =8
+let g:netrw_dirhist_8='/home/loki/.config/catgirl'
+let g:netrw_dirhist_7='/home/loki/.config/gtk-2.0'
+let g:netrw_dirhist_6='/home/loki/.config/vdirsyncer'
+let g:netrw_dirhist_5='/home/loki/sync/my-notes/database/linux'
+let g:netrw_dirhist_4='/home/loki/projects/AUR/ttf-openmoji'
+let g:netrw_dirhist_3='/home/loki/projects/AUR/ttf-twemoji-color'
+let g:netrw_dirhist_2='/home/loki/.local/share/nvim/plugged/nord-vim/colors'
+let g:netrw_dirhist_1='/home/loki/.config/swaynag'
+let g:netrw_dirhist_0='/home/loki/.config/swappy'
+let g:netrw_dirhist_9='/home/loki/.config/amfora'

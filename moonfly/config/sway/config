@@ -1,0 +1,235 @@
+# autostart
+exec 			udiskie
+exec 			gammastep
+
+# style
+font 			            pango:monospace 16px 
+default_border 		        pixel 	1
+titlebar_border_thickness 	1
+gaps 			            top	10
+gaps 			            bottom	0
+gaps 			            left	5
+gaps 			            right	5
+gaps 			            inner 	10
+
+# window decorations
+# class			        border	    background	text        indicator   child_border
+client.focused          #80a0ff     #303030     #c6c6c6     #80a0ff     #80a0ff
+client.focused_inactive #80a0ff     #303030     #c6c6c6     #80a0ff     #80a0ff
+client.unfocused        #80a0ff     #080808     #c6c6c6     #80a0ff     #303030
+client.urgent           #80a0ff     #80a0ff     #080808     #80a0ff     #80a0ff
+
+# import GTK settings
+exec_always /home/loki/bin/import-gsettings \
+	gtk-theme:gtk-theme-name \
+	icon-theme:gtk-icon-theme-name \
+	cursor-theme:gtk-cursor-theme-name\
+	font-name:gtk-font-name
+
+# window rules
+for_window 	[workspace="2"] 	    layout 	tabbed
+for_window 	[workspace="4"] 	    layout 	tabbed
+for_window 	[workspace="5"] 	    layout 	tabbed
+for_window 	[app_id="ncmpcpp"] 	    floating 	    enable, resize set height 450 px, resize set width 850 px, move position 1020 	0
+for_window 	[app_id="cava"] 	    floating 	    enable, resize set height 450 px, resize set width 850 px, move position 0 	    525
+for_window 	[app_id="libera"] 	    floating 	    enable, resize set height 500 px, resize set width 900 px, move position 970 	0
+for_window 	[app_id="tilde"] 	    floating 	    enable, resize set height 500 px, resize set width 900 px, move position 0 	    475
+for_window 	[app_id="low-key"] 	    floating 	    enable, resize set height 400 px, resize set width 800 px, move position 220 	150
+for_window 	[app_id="veracrypt"] 	floating 	    enable
+for_window 	[app_id="python3"] 	    floating 	    enable
+for_window 	[app_id="mpv"]		    inhibit_idle	fullscreen
+for_window	[app_id="imv"]	        border		    pixel 1
+
+# workspace assignments
+assign 		[app_id="amfora"] 		    2
+assign 		[app_id="neomutt"] 		    4
+assign 		[class="Signal Beta"] 		4
+assign 		[app_id="org.pwmt.zathura"] 5
+assign 		[class="Gimp-2.10"] 		7
+assign 		[class="Krita"] 		    7
+assign 		[app_id="audacity"] 		8
+
+## touchpad settings
+input "1739:52545:SYNA7DB5:01_06CB:CD41_Touchpad" {
+	dwt enabled
+	tap enabled
+	natural_scroll enabled
+	middle_emulation enabled
+   }
+
+# keybindings
+
+## logo key
+set 	$mod 	Mod4
+
+## home row direction keys
+set 	$left 	h
+set 	$down 	j
+set 	$up 	k
+set 	$right 	l
+
+## terminal emulator
+set 	$term 	kitty
+
+# Note: pass the final command to swaymsg so that the resulting window can be opened
+# on the original workspace that the command was run on.
+set 	$menu 	wofi | xargs swaymsg exec --
+
+## Output configuration
+# Default wallpaper 
+#output 		* 	bg 		/home/loki/pictures/wallpapers/almost-spring.jpg fill
+output     *   bg      /home/loki/pictures/wallpapers/garden-house.png fill
+
+# Behavior
+focus_follows_mouse 	yes
+
+# Idle configuration
+exec swayidle -w \
+	timeout 600 'swaylock -f' \
+	timeout 1800 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
+	before-sleep 'swaylock -f'
+
+# key bindings
+# start a terminal
+bindsym 	$mod+Return 	exec 	$term
+
+# kill focused window
+bindsym 	$mod+q 		    kill
+
+# start your launcher
+bindsym 	$mod+space 	    exec 	$menu
+
+# dismiss notifications
+bindsym 	Control+space 	exec 	makoctl dismiss
+
+# screenshot with grim and swappy
+bindsym 	print               exec /home/loki/bin/screenshot.sh
+bindsym 	Shift+print         exec /home/loki/bin/partial-screenshot.sh
+
+# launch calculator
+bindsym		$mod+c			exec /home/loki/bin/calculator.sh
+
+# launch emoji picker
+bindsym     $mod+e          exec cat /home/loki/.config/wofi/emoji-test.txt | wofi -c /home/loki/.config/wofi/emoji | sed 's/ .*//' | wl-copy -n
+
+# floating window controls (also works for non-floating windows)
+floating_modifier 		$mod 	normal
+
+# reload the configuration file
+bindsym 	$mod+r 		reload
+
+# restart sway
+bindsym 	$mod+Shift+r 	exec 	swaynag -t custom -m 'Do you wish to fully reload your Sway session?' -b 'Yes' 'swaymsg exit'
+
+# turn the system off
+bindsym 	$mod+p 	        exec 	swaynag -t custom -m 'What action would you like to perform?' -b 'Shutdown' 'poweroff' -b 'Restart' 'poweroff --reboot'
+
+# Moving around:
+# Move your focus around
+bindsym 	$mod+$left 	focus 	left
+bindsym 	$mod+$down 	focus 	down
+bindsym 	$mod+$up 	focus 	up
+bindsym 	$mod+$right focus 	right
+
+# Move the focused window with the same, but add Shift
+bindsym 	$mod+Shift+$left 	move 	left
+bindsym 	$mod+Shift+$down 	move 	down
+bindsym 	$mod+Shift+$up 		move 	up
+bindsym 	$mod+Shift+$right 	move 	right
+
+# Workspaces:
+# Switch to workspace
+bindsym 	$mod+1 		workspace 	number 	1
+bindsym 	$mod+2 		workspace 	number 	2
+bindsym 	$mod+3 		workspace 	number 	3
+bindsym 	$mod+4 		workspace 	number 	4
+bindsym 	$mod+5 		workspace 	number 	5
+bindsym 	$mod+6 		workspace 	number 	6
+bindsym 	$mod+7 		workspace 	number 	7
+bindsym 	$mod+8 		workspace 	number 	8
+bindsym 	$mod+9 		workspace 	number 	9
+bindsym 	$mod+0 		workspace 	number 	10
+
+# switch between present and previous workspace
+bindsym 	$mod+Tab 	workspace 	back_and_forth
+
+# Move focused container to workspace
+bindsym 	$mod+Shift+1 	move 	container to 	workspace number 1
+bindsym 	$mod+Shift+2	move 	container to 	workspace number 2
+bindsym 	$mod+Shift+3 	move 	container to 	workspace number 3
+bindsym 	$mod+Shift+4 	move 	container to 	workspace number 4
+bindsym 	$mod+Shift+5 	move 	container to 	workspace number 5
+bindsym 	$mod+Shift+6 	move 	container to 	workspace number 6
+bindsym 	$mod+Shift+7 	move 	container to 	workspace number 7
+bindsym 	$mod+Shift+8 	move 	container to 	workspace number 8
+bindsym 	$mod+Shift+9 	move 	container to 	workspace number 9
+bindsym 	$mod+Shift+0 	move 	container to 	workspace number 10
+
+
+# Layout stuff:
+
+# You can "split" the current object of your focus 
+bindsym 	$mod+b 		splith
+bindsym 	$mod+v 		splitv
+
+# Switch the current container between different layout styles
+bindsym 	$mod+m 		layout 		tabbed
+bindsym 	$mod+t 		layout 		toggle split
+
+# Make the current focus fullscreen
+bindsym 	$mod+f 		fullscreen
+
+# Toggle floating 
+bindsym 	$mod+s 		floating 	toggle
+
+# Toggle between floating and other layout
+bindsym 	$mod+Shift+s 	focus 		mode_toggle
+
+# Move floating windows around
+bindsym 	$mod+Up 		    move 	up 	    1
+bindsym 	$mod+Shift+Up 	    move 	up 	    10
+bindsym 	$mod+Left 		    move 	left 	1
+bindsym 	$mod+Shift+Left     move 	left 	10
+bindsym 	$mod+Right 		    move 	right 	1
+bindsym 	$mod+Shift+Right    move 	right 	10
+bindsym 	$mod+Down 		    move 	down 	1
+bindsym 	$mod+Shift+Down 	move 	down 	10
+
+# Move focus to the parent container
+bindsym 	$mod+a 		focus 	parent
+
+# Move focus to the child container
+bindsym 	$mod+Shift+a 		focus 	child
+
+# Scratchpad:
+# Move the currently focused window to the scratchpad
+bindsym 	$mod+Shift+minus 	move 	scratchpad
+
+# Show the next scratchpad window or hide the focused scratchpad window.
+bindsym 	$mod+minus 		scratchpad 	show
+
+# Resizing containers:
+bindsym 	$mod+alt+$left 		resize shrink 	width 	20px
+bindsym 	$mod+alt+$up 		resize grow 	height 	20px
+bindsym 	$mod+alt+$down 		resize shrink 	height 	20px
+bindsym 	$mod+alt+$right 	resize grow 	width 	20px
+
+## Special keys
+bindsym --locked XF86AudioRaiseVolume   exec sh -c "pactl set-sink-mute $(pactl list | rg 'Sink #' | sed 's/Sink #//') false ; pactl set-sink-volume $(pactl list | rg 'Sink #' | sed 's/Sink #//') +5%"
+bindsym --locked XF86AudioLowerVolume   exec sh -c "pactl set-sink-mute $(pactl list | rg 'Sink #' | sed 's/Sink #//') false ; pactl set-sink-volume $(pactl list | rg 'Sink #' | sed 's/Sink #//') -5%"
+bindsym --locked XF86AudioMute          exec pactl set-sink-mute $(pactl list | rg 'Sink #' | sed 's/Sink #//') toggle
+bindsym --locked XF86MonBrightnessUp    exec light -A 10 && notify-send " Light" "Brightness: $(light)%" --hint="int:value:$(light)"
+bindsym --locked XF86MonBrightnessDown  exec light -U 10 && notify-send " Light" "Brightness: $(light)%" --hint="int:value:$(light)"
+bindsym --locked XF86AudioPlay          exec mpc toggle
+bindsym --locked XF86AudioNext          exec mpc next
+bindsym --locked XF86AudioPrev          exec mpc prev
+bindsym --locked $mod+d                 exec sh -c "notify-send '  Do Not Disturb' 'Turning on Do Not Disturb Mode' && sleep 2 && makoctl set-mode do-not-disturb"
+bindsym --locked $mod+Shift+d           exec sh -c "makoctl set-mode default && notify-send '  Do Not Disturb' 'Do Not Disturb Mode disabled'"
+
+# status Bar:
+bar {
+    swaybar_command waybar
+    }
+}
+
+include /etc/sway/config.d/*
