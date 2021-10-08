@@ -1,4 +1,4 @@
-![Banner Image](/images/banner.png)
+![Banner Image](./images/banner.png)
 
 <p align="center">
 	<h1 align="center">Welcome ~</h1>
@@ -13,7 +13,7 @@ Welcome to my dotfiles repo. Below you'll find a list of all the setups I've use
 	</h2>
 </body>
 
-![Screenshot of clean system](/moonfly/images/clean.png)
+![Screenshot of clean system](./moonfly/images/clean.png)
 
 <body>
 	<h2 align="center">
@@ -21,7 +21,7 @@ Welcome to my dotfiles repo. Below you'll find a list of all the setups I've use
 	</h2>
 </body>
 
-![Screenshot of clean system](/images/duo.png)
+![Screenshot of clean system](./images/duo.png)
 
 <body>
 	<h2 align="center">
@@ -29,7 +29,7 @@ Welcome to my dotfiles repo. Below you'll find a list of all the setups I've use
 	</h2>
 </body>
 
-![Screenshot of clean system](/tokyo-night/images/clean.png)
+![Screenshot of clean system](./tokyo-night/images/clean.png)
 
 <body>
 	<h2 align="center">
@@ -37,7 +37,7 @@ Welcome to my dotfiles repo. Below you'll find a list of all the setups I've use
 	</h2>
 </body>
 
-![Screenshot of clean system](/nord-v3/images/clean.png)
+![Screenshot of clean system](./nord-v3/images/clean.png)
 
 
 <body>
@@ -46,7 +46,7 @@ Welcome to my dotfiles repo. Below you'll find a list of all the setups I've use
 	</h2>
 </body>
 
-![Screenshot of clean system](/nord-v2/images/clean.png)
+![Screenshot of clean system](./nord-v2/images/clean.png)
 
 
 <body>
@@ -55,4 +55,4 @@ Welcome to my dotfiles repo. Below you'll find a list of all the setups I've use
 	</h2>
 </body>
 
-![Screenshot of clean system](/nord-v1/images/clean.png)
+![Screenshot of clean system](./nord-v1/images/clean.png)
