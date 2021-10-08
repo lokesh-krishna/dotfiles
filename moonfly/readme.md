@@ -1,13 +1,5 @@
-<p align="center">
-    <img src="https://github.com/lokesh-krishna/dotfiles/blob/main/moonfly/images/hero.png" width="1920" />
-    <h2 align="center"></h2>
-</p>
-
-<p align="center">
-    <a href="https://github.com/bluz71/vim-moonfly-colors/">
-        <img src="https://github.com/lokesh-krishna/dotfiles/blob/main/images/inspired-by-moonfly.svg" />
-    </a>
-</p>
+![Hero image](./moonfly/images/hero.png)
+![Badge](./images/inspired-by-moonfly.svg)
 
 Moonfly, a rice inspired by the elegant [Moonfly](https://github.com/bluz71/vim-moonfly-colors) color scheme. 
 
@@ -48,34 +40,34 @@ The typefaces used in this setup are:
 ### Screenshots
 
 #### clean
-![Screenshot of clean system](/moonfly/images/clean.png)
+![Screenshot of clean system](./moonfly/images/clean.png)
 
 #### fetch
-![Screenshot of fetch screen](/moonfly/images/fetch.png)
+![Screenshot of fetch screen](./moonfly/images/fetch.png)
 
 #### busy
-![Screenshot of busy](/moonfly/images/busy.png)
+![Screenshot of busy](./moonfly/images/busy.png)
 
 #### browsers
-![Screenshot of browsers](/moonfly/images/browsers.png)
+![Screenshot of browsers](./moonfly/images/browsers.png)
 
 #### neovim
-![Screenshot of neovim](/moonfly/images/neovim.png)
+![Screenshot of neovim](./moonfly/images/neovim.png)
 
 #### zathura
-![Screenshot of zathura and neovim](/moonfly/images/zathura.png)
+![Screenshot of zathura and neovim](./moonfly/images/zathura.png)
 
 #### communications central
-![Screenshot of email client, irc client and calendar](/moonfly/images/communications.png)
+![Screenshot of email client, irc client and calendar](./moonfly/images/communications.png)
 
 #### music
-![Screenshot of music player and visualiser](/moonfly/images/music.png)
+![Screenshot of music player and visualiser](./moonfly/images/music.png)
 
 #### wofi (application launcher)
-![Screenshot of application launcher](/moonfly/images/wofi.png)
+![Screenshot of application launcher](./moonfly/images/wofi.png)
 
 #### mako (notifications)
-![Screenshot of notifications](/moonfly/images/mako.png)
+![Screenshot of notifications](./moonfly/images/mako.png)
 
 #### lockscreen
-![Screenshot of lockscreen](/moonfly/images/lockscreen.png)
+![Screenshot of lockscreen](./moonfly/images/lockscreen.png)
