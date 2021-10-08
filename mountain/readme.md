@@ -1,13 +1,5 @@
-<p align="center">
-    <img src="https://github.com/lokesh-krishna/dotfiles/blob/main/mountain/images/hero.png" width="1920" />
-    <h2 align="center"></h2>
-</p>
-
-<p align="center">
-    <a href="https://github.com/mountain-theme/Mountain/">
-        <img src="https://github.com/lokesh-krishna/dotfiles/blob/main/images/inspired-by-mountain.svg" />
-    </a>
-</p>
+![Hero image](./images/hero.png)
+![Badge](./images/badge.png)
 
 Presenting Sakura, a rice inspired by the beautiful [Mountain](https://github.com/mountain-theme/mountain) color scheme. 
 
@@ -48,34 +40,34 @@ The typefaces used in this setup are:
 ### Screenshots
 
 #### clean
-![Screenshot of clean system](/mountain/images/clean.png)
+![Screenshot of clean system](./images/clean.png)
 
 #### fetch
-![Screenshot of fetch screen](/mountain/images/fetch.png)
+![Screenshot of fetch screen](./images/fetch.png)
 
 #### busy
-![Screenshot of busy](/mountain/images/busy.png)
+![Screenshot of busy](./images/busy.png)
 
 #### browsers
-![Screenshot of browsers](/mountain/images/browsers.png)
+![Screenshot of browsers](./images/browsers.png)
 
 #### neovim
-![Screenshot of neovim](/mountain/images/neovim.png)
+![Screenshot of neovim](./images/neovim.png)
 
 #### zathura
-![Screenshot of zathura and neovim](/mountain/images/zathura.png)
+![Screenshot of zathura and neovim](./images/zathura.png)
 
 #### communications central
-![Screenshot of email client, irc client and calendar](/mountain/images/communications.png)
+![Screenshot of email client, irc client and calendar](./images/communications.png)
 
 #### music
-![Screenshot of music player and visualiser](/mountain/images/music.png)
+![Screenshot of music player and visualiser](./images/music.png)
 
 #### wofi (application launcher)
-![Screenshot of application launcher](/mountain/images/wofi.png)
+![Screenshot of application launcher](./images/wofi.png)
 
 #### mako (notifications)
-![Screenshot of notifications](/mountain/images/mako.png)
+![Screenshot of notifications](./images/mako.png)
 
 #### lockscreen
-![Screenshot of lockscreen](/mountain/images/lockscreen.png)
+![Screenshot of lockscreen](./images/lockscreen.png)
