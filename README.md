@@ -13,6 +13,7 @@ Welcome to my dotfiles repo. Below you'll find a list of all the setups I've use
 	</h2>
 </body>
 
+## [Cotton Candy Factory](./moonfly/readme.md)
 ![Screenshot of clean system](./moonfly/images/clean.png)
 
 <body>
