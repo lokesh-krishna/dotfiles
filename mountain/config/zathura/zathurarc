@@ -1,5 +1,5 @@
 set font			"mononoki Nerd Font 10"
-et selection-notification	"true"
+set selection-notification	"true"
 set selection-clipboard		"clipboard"
 set guioptions			"sv"
 set scroll-page-aware		"true"
