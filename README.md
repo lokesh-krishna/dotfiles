@@ -11,8 +11,8 @@ Welcome to my dotfiles repo. Below you'll find a list of all the setups I've use
 ## [Cotton Candy Factory](./moonfly/readme.md)
 ![Screenshot of clean system](./moonfly/images/clean.png)
 
-## [Sakura/Neon Sunset](./mountain/readme.md)
-![Screenshot of clean system](./images/duo.png)
+## [Sakura](./mountain/readme.md)
+![Screenshot of clean system](./mountain/images/clean.png)
 
 ## [Fishing For Stars](./tokyo-night/readme.md)
 ![Screenshot of clean system](./tokyo-night/images/clean.png)
