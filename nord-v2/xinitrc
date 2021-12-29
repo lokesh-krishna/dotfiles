@@ -1,6 +1,6 @@
 #!/bin/sh
 
-userresources=/home/loki/.config/X11/xresources
+userresources=~/.config/X11/xresources
 usermodmap=$HOME/.Xmodmap
 sysresources=/etc/X11/xinit/.Xresources
 sysmodmap=/etc/X11/xinit/.Xmodmap
