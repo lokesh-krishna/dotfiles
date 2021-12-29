@@ -1,6 +1,6 @@
 ignore-empty-password
 disable-caps-lock-text
-image=/home/loki/pictures/wallpapers/calvin-and-hobbes2.png
+image=$HOME/pictures/wallpapers/calvin-and-hobbes2.*
 font=Calvin and Hobbes
 
 text-ver-color=00000000
