@@ -1,0 +1,10 @@
+# Colors
+--colors
+match:bg:black
+--colors
+match:fg:magenta
+--colors
+line:fg:green
+
+# Options
+--smart-case

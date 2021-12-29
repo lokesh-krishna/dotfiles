@@ -1,0 +1,21 @@
+command_timeout = 1000
+
+[directory]
+style = "#A4B9EF"
+
+[cmd_duration]
+style = "#F2CECF"
+
+[character]
+success_symbol = "[](green)"
+error_symbol = "[](red)"
+vicmd_symbol = "[](green)"
+
+[git_branch]
+style = '#C6AAE8'
+
+[git_state]
+style = '#EBDDAA'
+
+[lua]
+disabled = true

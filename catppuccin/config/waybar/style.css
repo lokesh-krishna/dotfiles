@@ -1,0 +1,86 @@
+* {
+    border-radius: 0;
+    font-family: 'Operator Mono SSm Book';
+    font-size: 12pt;
+    min-height: 0;
+}
+
+window#waybar {
+    background: #1E1E28;
+    color: #DADAE8;
+}
+
+tooltip {
+	background: #1E1E28;
+	border-radius: 15px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #a4b9ef;
+	}
+
+#workspaces {
+    background: #332E41;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 15px;
+}
+
+#workspaces button {
+    padding-left: 10px;
+    padding-right: 10px;
+    min-width: 0;
+    color: #DADAE8;
+}
+
+#workspaces button.focused {
+    color: #A4B9EF;
+}
+
+#workspaces button.urgent {
+    color: #F9C096;
+}
+
+#workspaces button:hover {
+    background: #332e41;
+    border-color: #332e41;
+	color: #A4B9EF;
+}
+
+#clock, #battery, #pulseaudio, #workspaces, #mpd  {
+	padding: 2px 10px;
+    background: #332E41;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#network {
+    padding-left: 15px;
+    padding-right: 2px;
+    background: #332E41;
+    border-radius: 15px 0px 0px 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#custom-vpn {
+    background: #332E41;
+    padding-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#clock {
+    padding-right: 15px;
+    margin-right: 5px;
+    border-radius: 0px 15px 15px 0px;
+}
+
+#custom-spotify {
+    background: #332E41;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-radius: 15px;
+}
