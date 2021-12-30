@@ -18,9 +18,6 @@ export PAGER='less'
 export QT_QPA_PLATFORM=wayland
 export QT_WAYLAND_DISABLE_WINDOWDECORATION="1"
 
-# etesync-dav 
-export ETESYNC_URL=https://low-key.me:9000
-
 # FZF settings
 export FZF_DEFAULT_OPTS='
     --exact
@@ -62,10 +59,6 @@ export NNN_OPTS='deEPrUx'
 
 # bemenu settings
 export BEMENU_OPTS="--fn monospace 16px --tb #1E1E28 --tf #A4B9EF --fb #1E1E28 --ff #DADAE8 --nb #1E1E28 --nf #DADAE8 --hb #332E41 --hf #E5B4E2 --sb #332E41 --sf #E5B4E2 -H 40 -M 5px"
-
-# restic settings
-export B2_ACCOUNT_ID="0028d379bb433dd0000000002"
-export B2_ACCOUNT_KEY="K002EU+CEw+mImXkOAoWSP1yyvWYZqA"
 
 # bartib settings
 export BARTIB_FILE="/home/loki/sync/activities.bartib"
