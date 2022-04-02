@@ -35,5 +35,5 @@ i3lock --nofork                 	\
     --wrongsize=150			\
     --wrongtext="No Entry!"		\
     \
-    --image=/home/loki/pictures/wallpapers/nord_calvin-and-hobbes.png
+    --image=$HOME/pictures/wallpapers/nord_calvin-and-hobbes.png
 

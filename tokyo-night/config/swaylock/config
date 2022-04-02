@@ -1,6 +1,6 @@
 ignore-empty-password
 disable-caps-lock-text
-image=/home/loki/pictures/wallpapers/lock43.png
+image=$HOME/pictures/wallpapers/lock43.png
 font=Inter
 
 text-ver-color=00000000

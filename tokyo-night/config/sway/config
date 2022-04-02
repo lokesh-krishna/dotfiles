@@ -18,7 +18,7 @@ client.unfocused        #414868 #24283b #a9b1d6 #7dcfff   #414868
 client.urgent           #e0af68 #e0af68 #1d202f #7dcfff   #e0af68
 
 # Import GTK settings
-exec_always /home/loki/bin/import-gsettings \
+exec_always $HOME/bin/import-gsettings \
     gtk-theme:gtk-theme-name \
     icon-theme:gtk-icon-theme-name \
     cursor-theme:gtk-cursor-theme-name\
@@ -73,7 +73,7 @@ set $menu wofi --hide-scroll | xargs swaymsg exec --
 
 ## Output configuration
 # Default wallpaper 
-output * bg /home/loki/pictures/wallpapers/star-fishing.jpg fill
+output * bg $HOME/pictures/wallpapers/star-fishing.jpg fill
 
 # Behavior
 focus_follows_mouse yes

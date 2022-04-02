@@ -35,7 +35,7 @@
 	"custom/date": {
     		"format": "󰸗 {}",
 		"interval": 3600,
-		"exec": "/home/loki/bin/waybar-date.sh"
+		"exec": "$HOME/bin/waybar-date.sh"
 	},
 	"clock": {
 		"format": "󰅐 {:%H:%M} ",

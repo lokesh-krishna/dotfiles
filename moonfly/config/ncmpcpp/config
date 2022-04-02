@@ -270,7 +270,7 @@ song_columns_list_format = "(50)[7]{ar} (50)[5]{t}"
 ## Note: Custom command that will be executed each time song changes. Useful for
 ## notifications etc.
 ##
-execute_on_song_change = /home/loki/bin/music-notify.sh &
+execute_on_song_change = $HOME/bin/music-notify.sh &
 
 #
 ##

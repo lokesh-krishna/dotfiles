@@ -46,14 +46,14 @@ export BUKU_COLORS='hEhhf'
 export PF_INFO="ascii title os kernel uptime pkgs memory editor palette"
 
 # define configuration file location for ripgrep
-export RIPGREP_CONFIG_PATH='/home/loki/.config/ripgrep/ripgreprc'
+export RIPGREP_CONFIG_PATH='$HOME/.config/ripgrep/ripgreprc'
 
 # NNN settings
 export NNN_FIFO='/tmp/nnn.fifo'
 export NNN_TRASH='1' # use trash-cli
 export NNN_COLORS='4652' # colors for contexts
 export NNN_FCOLORS='0203040a000d0608090b0501' # file specific colors
-export NNN_BMS='w:/home/loki/pictures/wallpapers;p:/home/loki/projects;s:/home/loki/pictures/screenshots;m:/run/media/loki/'
+export NNN_BMS='w:$HOME/pictures/wallpapers;p:$HOME/projects;s:$HOME/pictures/screenshots;m:/run/media/loki/'
 export NNN_PLUG='p:preview-tui;o:launch'
 export NNN_OPTS='deEPrUx'
 
@@ -61,4 +61,4 @@ export NNN_OPTS='deEPrUx'
 export BEMENU_OPTS="--fn monospace 16px --tb #1E1E28 --tf #A4B9EF --fb #1E1E28 --ff #DADAE8 --nb #1E1E28 --nf #DADAE8 --hb #332E41 --hf #E5B4E2 --sb #332E41 --sf #E5B4E2 -H 40 -M 5px"
 
 # bartib settings
-export BARTIB_FILE="/home/loki/sync/activities.bartib"
+export BARTIB_FILE="$HOME/sync/activities.bartib"

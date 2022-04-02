@@ -1,4 +1,4 @@
-style=/home/loki/.config/wofi/style.css
+style=$HOME/.config/wofi/style.css
 xoffset=660
 yoffset=275
 show=drun

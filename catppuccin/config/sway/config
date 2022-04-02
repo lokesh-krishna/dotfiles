@@ -20,7 +20,7 @@ client.unfocused        #A4B9EF     #1E1E28     #DADAE8     #DADAE8     #575268
 client.urgent           #A4B9EF     #575268     #EBDDAA     #DADAE8     #EBDDAA
 
 # import GTK settings
-exec_always /home/loki/bin/import-gsettings.sh \
+exec_always $HOME/bin/import-gsettings.sh \
 	gtk-theme:gtk-theme-name \
 	icon-theme:gtk-icon-theme-name \
 	cursor-theme:gtk-cursor-theme-name\
@@ -79,7 +79,7 @@ set 	$term 	kitty
 set 	$menu 	j4-dmenu-desktop --no-generic --dmenu="bemenu -i --prompt 'search' " | xargs swaymsg exec --
 
 ## Output configuration
-output     *   bg      /home/loki/pictures/wallpapers/evening-sky.jpeg stretch
+output     *   bg      $HOME/pictures/wallpapers/evening-sky.jpeg stretch
 
 # Behavior
 focus_follows_mouse 	yes
@@ -99,14 +99,14 @@ bindsym 	$mod+q 		    kill
 
 # start your launcher
 bindsym 	$mod+space 	        exec 	$menu
-bindsym     $mod+Shift+space    exec    /home/loki/bin/online-search.sh
+bindsym     $mod+Shift+space    exec    $HOME/bin/online-search.sh
 
 # dismiss notifications
 bindsym 	Control+space 	exec 	makoctl dismiss
 
 # screenshot with grim and swappy
-bindsym 	print               exec /home/loki/bin/screenshot.sh
-bindsym 	Shift+print         exec /home/loki/bin/partial-screenshot.sh
+bindsym 	print               exec $HOME/bin/screenshot.sh
+bindsym 	Shift+print         exec $HOME/bin/partial-screenshot.sh
 
 # floating window controls (also works for non-floating windows)
 floating_modifier 		$mod 	normal
@@ -208,16 +208,16 @@ bindsym 	$mod+alt+$down 		resize shrink 	height 	20px
 bindsym 	$mod+alt+$right 	resize grow 	width 	20px
 
 ## Special keys
-bindsym --locked XF86AudioRaiseVolume   exec /home/loki/bin/volume-up.sh
-bindsym --locked XF86AudioLowerVolume   exec /home/loki/bin/volume-down.sh
+bindsym --locked XF86AudioRaiseVolume   exec $HOME/bin/volume-up.sh
+bindsym --locked XF86AudioLowerVolume   exec $HOME/bin/volume-down.sh
 bindsym --locked XF86AudioMute          exec pactl set-sink-mute $(pactl list | rg 'Sink #' | sed 's/Sink #//') toggle
 bindsym --locked XF86MonBrightnessUp    exec light -A 10 && notify-send " Light" "Brightness: $(light)%" --hint="int:value:$(light)"
 bindsym --locked XF86MonBrightnessDown  exec light -U 10 && notify-send " Light" "Brightness: $(light)%" --hint="int:value:$(light)"
 bindsym --locked XF86AudioPlay          exec playerctl -p spotify play-pause
 bindsym --locked XF86AudioNext          exec playerctl -p spotify next
 bindsym --locked XF86AudioPrev          exec playerctl -p spotify previous
-bindsym --locked $mod+d                 exec sh -c "notify-send -i /home/loki/pictures/icons/dnd.png '  Do Not Disturb' 'Turning on Do Not Disturb Mode' && sleep 2 && makoctl set-mode do-not-disturb"
-bindsym --locked $mod+Shift+d           exec sh -c "makoctl set-mode default && notify-send -i /home/loki/pictures/icons/dnd.png '  Do Not Disturb' 'Do Not Disturb Mode disabled'"
+bindsym --locked $mod+d                 exec sh -c "notify-send -i $HOME/pictures/icons/dnd.png '  Do Not Disturb' 'Turning on Do Not Disturb Mode' && sleep 2 && makoctl set-mode do-not-disturb"
+bindsym --locked $mod+Shift+d           exec sh -c "makoctl set-mode default && notify-send -i $HOME/pictures/icons/dnd.png '  Do Not Disturb' 'Do Not Disturb Mode disabled'"
 
 # status Bar:
 bar {

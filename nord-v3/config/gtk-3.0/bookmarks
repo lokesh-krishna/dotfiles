@@ -1,6 +1,6 @@
-file:///home/loki/sync
-file:///home/loki/projects/low-key
-file:///home/loki/documents
-file:///home/loki/downloads
-file:///home/loki/music
-file:///home/loki/pictures
+file://$HOME/sync
+file://$HOME/projects/low-key
+file://$HOME/documents
+file://$HOME/downloads
+file://$HOME/music
+file://$HOME/pictures

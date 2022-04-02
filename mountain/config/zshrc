@@ -11,10 +11,10 @@ fi
 bindkey -v
 
 # Local scripts
-path+=/home/loki/bin
+path+=$HOME/bin
 
 # Python packages
-path+=/home/loki/.local/bin
+path+=$HOME/.local/bin
 
 # Activate dir colors
 test -r ~/.dir_colors && eval $(dircolors ~/.dir_colors)

@@ -32,10 +32,10 @@ export FZF_DEFAULT_OPTS='
 bindkey -v
 
 # Local scripts
-path+=/home/loki/bin
+path+=$HOME/bin
 
 # Python packages
-path+=/home/loki/.local/bin
+path+=$HOME/.local/bin
 
 
 ########################################

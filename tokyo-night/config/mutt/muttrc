@@ -4,12 +4,12 @@
 set date_format="%d/%m/%y %I:%M%p"
 set index_format="%2C %Z %?X?A& ? %D %-35.35F %s"
 set sidebar_folder_indent
-set attach_save_dir="/home/loki/downloads/neomutt/"
+set attach_save_dir="$HOME/downloads/neomutt/"
 set query_command = "khard email --parsable --search-in-source-files '%s'"
 folder-hook . "set sort=reverse-date"
 folder-hook Gemini "set sort=threads"
 folder-hook Aerc "set sort=threads"
-set signature="/home/loki/.local/share/signature"
+set signature="$HOME/.local/share/signature"
 
 # Default index colors:
 color index white default '.*'

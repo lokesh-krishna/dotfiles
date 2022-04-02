@@ -39,7 +39,7 @@ picom &
 udiskie &
 
 # set the desktop background
-xwallpaper --stretch /home/loki/pictures/wallpapers/nord.png &
+xwallpaper --stretch $HOME/pictures/wallpapers/nord.png &
 
 # Start bspwm
 exec bspwm

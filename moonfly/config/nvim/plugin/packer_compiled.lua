@@ -44,8 +44,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/home/loki/.cache/nvim/packer_hererocks/2.0.5/share/lua/5.1/?.lua;/home/loki/.cache/nvim/packer_hererocks/2.0.5/share/lua/5.1/?/init.lua;/home/loki/.cache/nvim/packer_hererocks/2.0.5/lib/luarocks/rocks-5.1/?.lua;/home/loki/.cache/nvim/packer_hererocks/2.0.5/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/home/loki/.cache/nvim/packer_hererocks/2.0.5/lib/lua/5.1/?.so"
+local package_path_str = "$HOME/.cache/nvim/packer_hererocks/2.0.5/share/lua/5.1/?.lua;$HOME/.cache/nvim/packer_hererocks/2.0.5/share/lua/5.1/?/init.lua;$HOME/.cache/nvim/packer_hererocks/2.0.5/lib/luarocks/rocks-5.1/?.lua;$HOME/.cache/nvim/packer_hererocks/2.0.5/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "$HOME/.cache/nvim/packer_hererocks/2.0.5/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -71,75 +71,75 @@ time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
   ["gitsigns.nvim"] = {
     loaded = true,
-    path = "/home/loki/.local/share/nvim/site/pack/packer/start/gitsigns.nvim"
+    path = "$HOME/.local/share/nvim/site/pack/packer/start/gitsigns.nvim"
   },
   ["jsonc.vim"] = {
     loaded = true,
-    path = "/home/loki/.local/share/nvim/site/pack/packer/start/jsonc.vim"
+    path = "$HOME/.local/share/nvim/site/pack/packer/start/jsonc.vim"
   },
   ["lualine.nvim"] = {
     loaded = true,
-    path = "/home/loki/.local/share/nvim/site/pack/packer/start/lualine.nvim"
+    path = "$HOME/.local/share/nvim/site/pack/packer/start/lualine.nvim"
   },
   ["moonfly.nvim"] = {
     loaded = true,
-    path = "/home/loki/.local/share/nvim/site/pack/packer/start/moonfly.nvim"
+    path = "$HOME/.local/share/nvim/site/pack/packer/start/moonfly.nvim"
   },
   ["nvim-autopairs"] = {
     loaded = true,
-    path = "/home/loki/.local/share/nvim/site/pack/packer/start/nvim-autopairs"
+    path = "$HOME/.local/share/nvim/site/pack/packer/start/nvim-autopairs"
   },
   ["nvim-tree.lua"] = {
     loaded = true,
-    path = "/home/loki/.local/share/nvim/site/pack/packer/start/nvim-tree.lua"
+    path = "$HOME/.local/share/nvim/site/pack/packer/start/nvim-tree.lua"
   },
   ["nvim-treesitter"] = {
     loaded = true,
-    path = "/home/loki/.local/share/nvim/site/pack/packer/start/nvim-treesitter"
+    path = "$HOME/.local/share/nvim/site/pack/packer/start/nvim-treesitter"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
-    path = "/home/loki/.local/share/nvim/site/pack/packer/start/nvim-web-devicons"
+    path = "$HOME/.local/share/nvim/site/pack/packer/start/nvim-web-devicons"
   },
   ["packer.nvim"] = {
     loaded = true,
-    path = "/home/loki/.local/share/nvim/site/pack/packer/start/packer.nvim"
+    path = "$HOME/.local/share/nvim/site/pack/packer/start/packer.nvim"
   },
   playground = {
     loaded = true,
-    path = "/home/loki/.local/share/nvim/site/pack/packer/start/playground"
+    path = "$HOME/.local/share/nvim/site/pack/packer/start/playground"
   },
   ["plenary.nvim"] = {
     loaded = true,
-    path = "/home/loki/.local/share/nvim/site/pack/packer/start/plenary.nvim"
+    path = "$HOME/.local/share/nvim/site/pack/packer/start/plenary.nvim"
   },
   ["popup.nvim"] = {
     loaded = true,
-    path = "/home/loki/.local/share/nvim/site/pack/packer/start/popup.nvim"
+    path = "$HOME/.local/share/nvim/site/pack/packer/start/popup.nvim"
   },
   ["sway-vim-syntax"] = {
     loaded = true,
-    path = "/home/loki/.local/share/nvim/site/pack/packer/start/sway-vim-syntax"
+    path = "$HOME/.local/share/nvim/site/pack/packer/start/sway-vim-syntax"
   },
   ["telescope.nvim"] = {
     loaded = true,
-    path = "/home/loki/.local/share/nvim/site/pack/packer/start/telescope.nvim"
+    path = "$HOME/.local/share/nvim/site/pack/packer/start/telescope.nvim"
   },
   ["twilight.nvim"] = {
     loaded = true,
-    path = "/home/loki/.local/share/nvim/site/pack/packer/start/twilight.nvim"
+    path = "$HOME/.local/share/nvim/site/pack/packer/start/twilight.nvim"
   },
   ["vim-kitty"] = {
     loaded = true,
-    path = "/home/loki/.local/share/nvim/site/pack/packer/start/vim-kitty"
+    path = "$HOME/.local/share/nvim/site/pack/packer/start/vim-kitty"
   },
   ["vim-pencil"] = {
     loaded = true,
-    path = "/home/loki/.local/share/nvim/site/pack/packer/start/vim-pencil"
+    path = "$HOME/.local/share/nvim/site/pack/packer/start/vim-pencil"
   },
   ["zen-mode.nvim"] = {
     loaded = true,
-    path = "/home/loki/.local/share/nvim/site/pack/packer/start/zen-mode.nvim"
+    path = "$HOME/.local/share/nvim/site/pack/packer/start/zen-mode.nvim"
   }
 }
 
