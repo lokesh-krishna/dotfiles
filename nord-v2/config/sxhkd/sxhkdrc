@@ -10,23 +10,23 @@ super + @space
 
 # lock screen
 alt + l
-	/home/loki/bin/lock.sh
+	$HOME/bin/lock.sh
 
 # take a screenshot
 super + Print
-	/home/loki/bin/screenshot.sh
+	$HOME/bin/screenshot.sh
 
 # take screenshot and copy to clipboard
 Print
-	/home/loki/bin/screenshot-clip.sh
+	$HOME/bin/screenshot-clip.sh
 
 # take a screenshot of selected area
 super + shift + Print
-	/home/loki/bin/partial-screenshot.sh
+	$HOME/bin/partial-screenshot.sh
 
 # take a screenshot of selected area and copy to clipboard
 shift + Print
-	/home/loki/bin/partial-screenshot-clip.sh
+	$HOME/bin/partial-screenshot-clip.sh
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -64,11 +64,11 @@ XF86AudioPrev
 	mpc prev
 # turn on DND
 super + d
-	/home/loki/bin/dnd-on.sh 
+	$HOME/bin/dnd-on.sh 
 
 # turn off DND
 super + shift + d
-	/home/loki/bin/dnd-off.sh
+	$HOME/bin/dnd-off.sh
 
 #
 # bspwm hotkeys

@@ -48,10 +48,10 @@ function zle-keymap-select () {
 zle -N zle-keymap-select
 
 # Local scripts
-path+=/home/loki/bin
+path+=$HOME/bin
 
 # Python packages
-path+=/home/loki/.local/bin
+path+=$HOME/.local/bin
 
 # app colors
 export BUKU_COLORS=hOghE

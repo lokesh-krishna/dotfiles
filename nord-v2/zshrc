@@ -41,13 +41,13 @@ alias -s png=feh
 alias -s jpg=feh
 
 # Local scripts
-path+=/home/loki/bin
+path+=$HOME/bin
 
 # Alias to add color to sdcv
 alias sdcv='sdcv --color'
 
 # Alias to sync music files between laptop and tablet
-alias music-sync='adb-sync --delete /home/loki/backups/loki_violet/Music /mnt/sdcard'
+alias music-sync='adb-sync --delete $HOME/backups/loki_violet/Music /mnt/sdcard'
 
 ########################################
 # Color Man Pages

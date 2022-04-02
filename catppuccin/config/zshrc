@@ -7,10 +7,10 @@ fi
 bindkey -v
 
 # local scripts
-path+=/home/loki/bin
+path+=$HOME/bin
 
 # python packages
-path+=/home/loki/.local/bin
+path+=$HOME/.local/bin
 
 # activate dir colors
 test -r ~/.dir_colors && eval $(dircolors ~/.dir_colors)
@@ -20,10 +20,10 @@ alias sdcv='sdcv --color'
 alias ledger='ledger -f ~/sync/ledger.dat'
 alias vs='vdirsyncer sync'
 alias wl-copy='wl-copy -n'
-alias gemsync='rsync --recursive --update --delete --human-readable --progress /home/loki/sync/gemini low-key:/home/loki/low-key.me/'
-alias helios-backup='restic -r /media/seagate/restic-helios backup --files-from-verbatim=/home/loki/.restic-inclusions --exclude-file=/home/loki/.restic-exclusions'
-alias helios-backup-b2='restic -r s3:sgp1.digitaloceanspaces.com/low-key/helios backup --files-from-verbatim=/home/loki/.restic-inclusions --exclude-file=/home/loki/.restic-exclusions'
-alias violet-backup='aft-mtp-mount /home/loki/violet && restic -r /media/seagate/restic-violet backup --files-from-verbatim=/home/loki/.restic-violet-inclusions && fusermount -u /home/loki/violet'
+alias gemsync='rsync --recursive --update --delete --human-readable --progress $HOME/sync/gemini low-key:$HOME/low-key.me/'
+alias helios-backup='restic -r /media/seagate/restic-helios backup --files-from-verbatim=$HOME/.restic-inclusions --exclude-file=$HOME/.restic-exclusions'
+alias helios-backup-b2='restic -r s3:sgp1.digitaloceanspaces.com/low-key/helios backup --files-from-verbatim=$HOME/.restic-inclusions --exclude-file=$HOME/.restic-exclusions'
+alias violet-backup='aft-mtp-mount $HOME/violet && restic -r /media/seagate/restic-violet backup --files-from-verbatim=$HOME/.restic-violet-inclusions && fusermount -u $HOME/violet'
 
 # suffix aliases
 alias -s md=nvim

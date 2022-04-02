@@ -159,7 +159,7 @@
     max_icon_size = 64
 
     # Paths to default icons.
-    icon_folders = /home/loki/.icons/
+    icon_folders = $HOME/.icons/
 
     ### History ###
 
@@ -176,7 +176,7 @@
     dmenu = /usr/bin/rofi -p dunst:
 
     # Browser for opening urls in context menu.
-    browser = /home/loki/apps/firefox/firefox -new-tab
+    browser = $HOME/apps/firefox/firefox -new-tab
 
     # Always run rule-defined scripts, even if the notification is suppressed
     always_run_script = true

@@ -20,7 +20,7 @@ client.unfocused        #80a0ff     #080808     #c6c6c6     #80a0ff     #303030
 client.urgent           #80a0ff     #80a0ff     #080808     #80a0ff     #80a0ff
 
 # import GTK settings
-exec_always /home/loki/bin/import-gsettings \
+exec_always $HOME/bin/import-gsettings \
 	gtk-theme:gtk-theme-name \
 	icon-theme:gtk-icon-theme-name \
 	cursor-theme:gtk-cursor-theme-name\
@@ -77,8 +77,8 @@ set 	$menu 	wofi | xargs swaymsg exec --
 
 ## Output configuration
 # Default wallpaper 
-#output 		* 	bg 		/home/loki/pictures/wallpapers/almost-spring.jpg fill
-output     *   bg      /home/loki/pictures/wallpapers/garden-house.png fill
+#output 		* 	bg 		$HOME/pictures/wallpapers/almost-spring.jpg fill
+output     *   bg      $HOME/pictures/wallpapers/garden-house.png fill
 
 # Behavior
 focus_follows_mouse 	yes
@@ -103,14 +103,14 @@ bindsym 	$mod+space 	    exec 	$menu
 bindsym 	Control+space 	exec 	makoctl dismiss
 
 # screenshot with grim and swappy
-bindsym 	print               exec /home/loki/bin/screenshot.sh
-bindsym 	Shift+print         exec /home/loki/bin/partial-screenshot.sh
+bindsym 	print               exec $HOME/bin/screenshot.sh
+bindsym 	Shift+print         exec $HOME/bin/partial-screenshot.sh
 
 # launch calculator
-bindsym		$mod+c			exec /home/loki/bin/calculator.sh
+bindsym		$mod+c			exec $HOME/bin/calculator.sh
 
 # launch emoji picker
-bindsym     $mod+e          exec cat /home/loki/.config/wofi/emoji-test.txt | wofi -c /home/loki/.config/wofi/emoji | sed 's/ .*//' | wl-copy -n
+bindsym     $mod+e          exec cat $HOME/.config/wofi/emoji-test.txt | wofi -c $HOME/.config/wofi/emoji | sed 's/ .*//' | wl-copy -n
 
 # floating window controls (also works for non-floating windows)
 floating_modifier 		$mod 	normal

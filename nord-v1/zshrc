@@ -71,7 +71,7 @@ alias backup='rsync --archive --delete \
 alias -s md=nvim 
 
 # Open my ledger file by default  
-alias ledger='ledger -f /home/loki/sync/ledger/ledger.dat'
+alias ledger='ledger -f $HOME/sync/ledger/ledger.dat'
 
 ########################################
 # Shell Functions
