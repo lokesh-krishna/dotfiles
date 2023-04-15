@@ -1,0 +1,22 @@
+vim.o.termguicolors = true                        -- enable 24-bit RGB colors
+vim.o.scrolloff = 7                               -- show 7 lines around the cursorline
+vim.o.tabstop = 2                                 -- length of a tab
+vim.o.expandtab = true                            -- make tab key use the tabstop length
+vim.o.shiftwidth = 2                              -- level of indentation
+vim.o.nu = true                                   -- show number of line before the line
+vim.o.ignorecase = true                           -- ignore case when searching
+vim.o.smartcase = true                            -- but search for upper case if upper case is specified
+vim.o.cursorline = true                           -- highlight cursorline
+vim.o.showtabline = 1                             -- only show tabline if there is more than 1 tab
+vim.o.guicursor = ''                              -- status line handles mode so cursor doesn't need to
+vim.o.clipboard = 'unnamedplus'                   -- enable copying to system clipboard
+vim.o.spell = true                                -- treesitter powered spell checking
+vim.o.spelllang = 'en_gb'                         -- set language for spell checking
+vim.o.completeopt = 'menu,menuone,noselect'       -- options for completion menu
+vim.o.cmdheight = 0                               -- only show command bar when it's being used
+vim.o.laststatus = 0                              -- disable last status
+vim.o.relativenumber = true                       -- enable relative line numbers
+vim.o.showcmdloc = 'statusline'
+--vim.o.statuscolumn = '%l %r'                      -- display both, line numbers and relative line numbers
+
+vim.g.tex_flavor = 'latex'

@@ -1,0 +1,143 @@
+* {
+  font-family:'Monospace','tabler-icons';
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+window#waybar {
+  background: transparent;
+  color: #dcd7ba;
+}
+
+tooltip {
+  background: #1f1f28;
+  border-radius: 15px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #7e9cd8;
+  font-size: 13pt;
+}
+
+tooltip label {
+  padding: 7px;
+}
+
+#workspaces {
+  background: #16161d;
+  font-size: 18pt;
+  padding-top: 20px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  padding-bottom: 10px;
+}
+
+#workspaces button {
+  color: #dcd7ba;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#workspaces button.focused {
+  color: #7e9cd8;
+}
+
+#workspaces button.active {
+  color: #7e9cd8;
+}
+
+#workspaces button.urgent {
+    color: #e6c384;
+}
+
+#workspaces button:hover {
+    background: #1f1f28;
+    border-color: #1f1f28;
+	color: #7e9cd8;
+}
+
+#custom-spotify {
+  background: #16161d;
+  color: #d27e99;
+  padding-bottom: 20px;
+  font-size: 18pt;
+  border-radius: 0px;
+}
+
+#network, #pulseaudio, #pulseaudio.percentage, #battery, #battery.percentage, #custom-vpn, #custom-calendar-icon, #clock, #clock.date, #custom-time-icon, #clock.time {
+  background: #1f1f28;
+  border-radius: 0px;
+}
+
+#network {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-size: 18pt;
+  color: #7aa89f;
+}
+
+#pulseaudio {
+  padding-top: 10px;
+  color: #c0a36e;
+  font-size: 18pt;
+}
+
+#pulseaudio.percentage {
+  font-size: 13pt;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #dcd7ba;
+}
+
+#battery {
+  padding-top: 10px;
+  font-size: 18pt;
+  color: #98bb6c;
+}
+
+#battery.percentage {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 13pt;
+  color: #dcd7ba;
+}
+
+#custom-vpn {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #9cabca;
+  font-size: 18pt;
+}
+
+#custom-calendar-icon {
+  padding-top: 10px;
+  font-size: 18pt;
+  color: #957fb8;
+}
+
+#clock {
+  padding-top: 10px;
+  font-size: 13pt;
+  color: #dcd7ba;
+}
+
+#clock.date {
+  padding-top: 1px;
+  font-size: 13pt;
+  padding-bottom: 10px;
+  color: #dcd7ba;
+}
+
+#custom-time-icon {
+  padding-top: 10px;
+  font-size: 18pt;
+  color: #7fb4ca;
+}
+
+#clock.time {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  font-size: 13pt;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  color: #dcd7ba;
+}

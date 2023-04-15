@@ -1,0 +1,8 @@
+configuration {
+  modes: "drun";
+  font: "Monospace 13";
+  fixed-num-lines: true;
+  drun-match-fields: "name,generic,exec,categories,keywords";
+  drun-display-format: "{name} [<span foreground='#dcd7ba'><i>({generic})</i></span>]";
+}
+@theme "kanagawa"

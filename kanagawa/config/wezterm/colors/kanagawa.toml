@@ -1,0 +1,36 @@
+[colors]
+ansi = [
+    '#727169',
+    '#e46876',
+    '#98bb6c',
+    '#e6c384',
+    '#7e9cd8',
+    '#957fb8',
+    '#68ad99',
+    '#c8c093',
+]
+background = '#1f1f28'
+brights = [
+    '#717c7c',
+    '#e46876',
+    '#98bb6c',
+    '#e6c384',
+    '#7e9cd8',
+    '#957fb8',
+    '#68ad99',
+    '#dcd7ba',
+]
+cursor_bg = '#b8b4d0'
+cursor_border = '#b8b4d0'
+cursor_fg = '#1f1f28'
+foreground = '#dcd7ba'
+selection_bg = '#223249'
+selection_fg = '#dcd7ba'
+split = '#7e9cd8'
+compose_cursor = '#9cabca'
+
+[colors.indexed]
+
+[metadata]
+name = 'Kanagawa'
+origin_url = 'https://github.com/rebelot/kanagawa.nvim'
