@@ -1,7 +1,7 @@
 ![Hero image](./images/hero.png)
 ![Badge](../images/inspired-by-kanagawa.svg)
 
-Beneath the Surface, a rice inspired by the gorgeous [Kanagawa](https://github.com/catppuccin/catppuccin) color scheme, which in turn was inspired by [_The Great Wave off Kanagawa_](https://en.wikipedia.org/wiki/The_Great_Wave_off_Kanagawa).
+Beneath the Surface, a rice inspired by the gorgeous [Kanagawa](https://github.com/rebelot/kanagawa.nvim) color scheme, which in turn was inspired by [_The Great Wave off Kanagawa_](https://en.wikipedia.org/wiki/The_Great_Wave_off_Kanagawa).
 
 The following are the UI components of this setup:
 - window manager: [hyprland](https://hyprland.org/)
