@@ -63,8 +63,5 @@ The typefaces used in this setup are:
 #### anyrun (application launcher)
 ![Screenshot of application launcher](./images/anyrun.png)
 
-#### dunst (notifications)
-![Screenshot of notifications](./images/notifications.png)
-
 #### lockscreen
 ![Screenshot of lockscreen](./images/lockscreen.png)
