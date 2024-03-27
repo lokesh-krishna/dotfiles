@@ -1,0 +1,117 @@
+* {
+  font-family: 'Asap Medium','tabler-icons';
+}
+
+window#waybar {
+  background: #11111b;
+  opacity: 0.95;
+  color: #cdd6f4;
+}
+
+tooltip {
+  background: #1e1e2e;
+  border-radius: 15px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #89b4fa;
+  font-size: 13.5pt;
+}
+
+tooltip label {
+  padding: 7px;
+}
+
+#workspaces {
+  font-size: 18pt;
+  padding-top: 10px;
+}
+
+#workspaces button {
+  color: #cdd6f4;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#workspaces button.active {
+  color: #89b4fa;
+}
+
+#custom-spotify {
+  color: #f5c2e7;
+  padding-top: 15px;
+  font-size: 18pt;
+  border-radius: 0px;
+}
+
+#custom-navidrome {
+  color: #f5c2e7;
+  font-size: 18pt;
+  padding-top: 10px;
+  border-radius: 0px;
+}
+
+#network {
+  padding-bottom: 15px;
+  font-size: 18pt;
+  color: #94e2d5;
+}
+
+#custom-vpn {
+  color: #cba6f7;
+  padding-bottom: 15px;
+  font-size: 18pt;
+}
+
+#custom-brightness-icon {
+  font-size: 18pt;
+  color: #fab387;
+  padding-bottom: 5px;
+}
+
+#custom-brightness {
+  color: #cdd6f4;
+  font-size: 13.5pt;
+  padding-bottom: 15px;
+}
+
+#pulseaudio {
+  color: #f2cdcd;
+  font-size: 18pt;
+  padding-bottom: 5px;
+}
+
+#pulseaudio.percentage {
+  font-size: 13.5pt;
+  padding-bottom: 15px;
+  color: #cdd6f4;
+}
+
+#custom-calendar-icon {
+  font-size: 18pt;
+  color: #b4befe;
+  padding-bottom: 5px;
+}
+
+#clock {
+  font-size: 13.5pt;
+  color: #cdd6f4;
+}
+
+#clock.date {
+  padding-top: 1px;
+  font-size: 13.5pt;
+  color: #cdd6f4;
+  padding-bottom: 15px;
+}
+
+#custom-time-icon {
+  font-size: 18pt;
+  color: #89dceb;
+  padding-bottom: 5px;
+}
+
+#clock.time {
+  padding-bottom: 15px;
+  font-size: 13.5pt;
+  color: #cdd6f4;
+}

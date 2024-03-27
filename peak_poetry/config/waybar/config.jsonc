@@ -1,0 +1,117 @@
+{
+  "layer": "top",
+  "position": "left", 
+  "width": 50,
+  "modules-left": ["hyprland/workspaces", "custom/spotify", "custom/navidrome"],
+//  "modules-center": ["cava"],
+  "modules-right": ["network", "custom/vpn", "custom/brightness-icon", "custom/brightness", "pulseaudio", "pulseaudio#percentage", "custom/calendar-icon", "clock", "clock#date", "custom/time-icon", "clock#time"],
+// Modules configuration
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "on-click": "activate",
+    "sort-by": true,
+    "format-icons": {
+            "1": "",
+            "2": "",
+            "3": "",
+            "4": "",
+            "5": "",
+            "6": "",
+            "7": "",
+            "8": "",
+            "9": "",
+            "99": ""
+         }
+     },
+  "custom/spotify": {
+    "format": "",
+    "interval": 1,
+    "exec-if": "pgrep spotify",
+    "return-type": "json",
+    "on-click": "playerctl -p spotify play-pause",
+    "on-scroll-up": "playerctl -p spotify previous",
+    "on-scroll-down": "playerctl -p spotify next",
+    "tooltip": true,
+    "escape": true,
+    "exec": "/home/loki/bin/spotify.sh"
+  },
+  "custom/navidrome": {
+    "format": "",
+    "interval": 1,
+    "exec-if": "pgrep ncmpcpp",
+    "return-type": "json",
+    "on-click": "playerctl -p mpd play-pause",
+    "on-scroll-up": "playerctl -p mpd previous",
+    "on-scroll-down": "playerctl -p mpd next",
+    "tooltip": true,
+    "escape": true,
+    "exec": "/home/loki/bin/navidrome.sh"
+  },
+  "network": {
+    "format-wifi": "",
+    "format-ethernet": "",
+    "format-linked": "",
+    "format-disconnected": "",
+	  "tooltip-format-wifi": "{essid}",
+	  "tooltip-format-disconnected": "Disconnected",
+    "max-length": 3
+  },
+  "custom/vpn": {
+    "format": "{}",
+    "interval": 1,
+    "tooltip": false,
+    "exec": "/home/loki/bin/waybar_vpn.sh"
+  },
+  "pulseaudio": {
+	"on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+	"format": "{icon}",
+    "format-muted": "",
+    "format-icons": {
+        "headphone": "",
+        "hands-free": "",
+        "headset": "",
+        "phone": "",
+        "portable": "",
+        "car": "",
+        "default": ["", ""]
+    }
+  },
+  "pulseaudio#percentage": {
+	"on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+	"format": "{volume}"
+  },
+  "custom/brightness-icon": {
+    "format": "",
+    "tooltip": false
+  },
+  "custom/brightness": {
+    "format": "{percentage}",
+    "return-type": "json",
+    "exec": "ddcutil getvcp 10 | awk '{print $9}' | sed 's/,//' | sed 's/^/{\"percentage\": /' | sed 's/$/ }/'",
+    "on-scroll-up": "ddcutil setvcp 10 + 10",
+    "on-scroll-down": "ddcutil setvcp 10 - 10",
+    "on-click": "ddcutil setvcp 10 0",
+    "on-click_right": "ddcutil setvcp 10 100",
+    "interval": 1,
+    "tooltip": false
+  },
+  "custom/calendar-icon": {
+    "format": "",
+    "tooltip": false
+  },
+  "clock": {
+	"format": "{:%a}",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+  },
+  "clock#date": {
+	"format": "{:%d}",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+  },
+  "custom/time-icon": {
+    "format": "",
+    "tooltip": false
+  },
+  "clock#time": {
+	"format": "{:%H\n%M}"
+  }
+}

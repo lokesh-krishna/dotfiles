@@ -1,0 +1,11 @@
+pane-widths {
+  nicknames 12
+  channels 0
+  members 0
+}
+colors {
+  prompt "#89b4fa"
+  unread "#f5c2e7"
+  nicks base
+  status disabled
+}

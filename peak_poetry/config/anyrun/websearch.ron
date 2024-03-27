@@ -1,0 +1,7 @@
+Config(
+	prefix: "?",
+	engines: [Custom(
+		name: "Whoogle",
+		url: "search.low-key.me/search?q={}",
+		), DuckDuckGo]
+	)

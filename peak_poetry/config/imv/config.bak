@@ -1,0 +1,10 @@
+# Styling
+[options]
+background = #24283b
+fullscreen = true
+overlay = true
+overlay_text_color = #c0caf5
+overlay_background_color = #414868
+overlay_background_alpha = ff
+overlay_font = monospace:14
+overlay_position_bottom = true

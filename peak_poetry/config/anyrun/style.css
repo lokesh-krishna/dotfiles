@@ -1,0 +1,63 @@
+* {
+	transition: 200ms ease;
+	font-family: 'Asap';
+	font-size: 13.5pt;
+	color: #cdd6f4;
+}
+
+#window {
+	background-color: transparent;
+}
+
+box#main {
+	background-color: transparent;
+	border: none;
+}
+
+entry#entry {
+	min-height: 40px;
+	border-radius: 15px;
+	background: #11111b;
+	opacity: 0.9;
+	box-shadow: none;
+	border: 2px solid #89b4fa;
+	margin-bottom: 10px;
+}
+
+list#main {
+	background-color: #1e1e2e;
+	opacity: 0.9;
+	border: 2px solid #89b4fa;
+	border-radius: 15px;
+	padding: 10px;
+}
+
+#plugin {
+	background: #1e1e2e;
+	padding: 5px;
+}
+
+#match {
+	padding: 3px;
+}
+
+#match:selected {
+	background: #45475a;
+	border-radius: 15px;
+	color: #89b4fa;
+}
+
+#match:hover {
+	background: transparent;
+	border-radius: 15px;
+}
+
+label#match-desc {
+	font-size: 12pt;
+	color: #a6adc8;
+}
+
+label#plugin {
+	font-size: 13.5pt;
+	font-family: 'Asap Medium';
+}

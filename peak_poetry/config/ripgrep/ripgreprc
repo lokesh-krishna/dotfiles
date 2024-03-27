@@ -1,0 +1,12 @@
+# neovim selection color
+--colors
+match:bg:62,87,103
+# text
+--colors
+match:fg:205,214,244
+# comments
+--colors
+line:fg:69,71,90
+
+# Options
+--smart-case

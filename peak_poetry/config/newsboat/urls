@@ -1,0 +1,12 @@
+https://grapheneos.org/releases.atom                              android
+https://old.reddit.com/r/Android/top/.rss?sort=top&t=month        android "~r/Android"
+https://old.reddit.com/r/AndroidApps/top/.rss?sort=top&t=month    android "~r/AndroidApps"
+https://old.reddit.com/r/fossdroid/top/.rss?sort=top&t=month      android "~r/Fossdroid"
+
+https://old.reddit.com/r/linux/top/.rss?sort=top&t=month          linux "~r/Linux"
+https://old.reddit.com/r/commandline/top/.rss?sort=top&t=month    linux "~r/CommandLine"
+https://old.reddit.com/r/unixporn/top/.rss?sort=top&t=month       linux "~r/UnixPorn"
+https://old.reddit.com/r/selfhosted/top/.rss?sort=top&t=month     linux "~r/SelfHosted"
+https://old.reddit.com/r/homeassistant/top/.rss?sort=top&t=month  linux "~r/HomeAssistant"
+
+

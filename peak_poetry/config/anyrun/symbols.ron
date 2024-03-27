@@ -1,0 +1,8 @@
+Config(
+	prefix: "",
+	symbols: {
+		"rupee": "Rs.",
+    "shrug": "¯\\_(ツ)_/¯"
+	},
+	max_entries: 3,
+)

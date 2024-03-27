@@ -1,0 +1,10 @@
+# styling
+[options]
+background = #1e1e2e
+fullscreen = false
+overlay = true
+overlay_text_color = #cdd6f4
+overlay_background_color = #11111b
+overlay_background_alpha = ff
+overlay_font = Asap:13.5
+overlay_position_bottom = false

@@ -1,0 +1,3 @@
+-o ~/videos/youtube/%(title)s.%(ext)s
+--audio-quality 0
+--embed-chapters

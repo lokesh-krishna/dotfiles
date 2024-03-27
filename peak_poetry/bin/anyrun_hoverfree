@@ -1,0 +1,3 @@
+#!/bin/sh
+
+hyprctl dispatch movecursor 2000 500 && hyprctl dispatch exec anyrun

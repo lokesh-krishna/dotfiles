@@ -1,0 +1,33 @@
+# settings
+browser                 "firefox --new-tab %u"
+show-keymap-hint        no
+show-title-bar          no
+
+# colors
+color listfocus           color0    color4
+color listnormal_unread   color3    default
+color listfocus_unread    color0    color3
+color title               color4    default     bold
+color end-of-text-marker  color8    default
+
+# highlights
+highlight article "^(Feed|Link):.*$" color4 default bold
+highlight article "^(Date):.*$" color7 default bold
+highlight article "^(Title|Author):.*$" color5 default bold
+highlight article "https?://[^ ]+" color10 default underline
+highlight article "\\[[0-9]+\\]" color10 default bold
+highlight article "\\[image\\ [0-9]+\\]" color10 default bold
+highlight feedlist "^─.*$" color6 color0 bold
+
+# Key bindings
+bind-key  l open
+bind-key  h quit
+bind-key  q hard-quit
+bind-key  j next
+bind-key  k prev
+bind-key  J next-unread
+bind-key  K prev-unread
+bind-key  G end
+
+# macros
+macro m set browser mpv; open-in-browser; set browser "firefox --new-tab %u"
