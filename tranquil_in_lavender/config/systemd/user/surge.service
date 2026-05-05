@@ -1,0 +1,11 @@
+[Unit]
+Description=surge download manager
+
+[Service]
+ExecStart=/usr/bin/surge server --token bf941f0a-14ab-4ed1-8d09-67b0891a08e0
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=default.target
+

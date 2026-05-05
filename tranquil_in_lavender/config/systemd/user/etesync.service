@@ -1,0 +1,9 @@
+[Unit]
+Description=EteSync adapter for DAV
+
+[Service]
+Type=exec
+ExecStart=/usr/local/bin/linux-amd64-etesync-dav
+
+[Install]
+WantedBy=default.target

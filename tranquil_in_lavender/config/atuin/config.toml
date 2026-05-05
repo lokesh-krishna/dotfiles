@@ -1,0 +1,13 @@
+# Sync
+sync_frequency = "0"
+
+# UI
+style = "full"
+invert = true
+show_help = false
+[ui]
+columns = ["duration", "time", "host", "command"]
+
+# Theme
+[theme]
+name = "catppuccin-mocha-blue"

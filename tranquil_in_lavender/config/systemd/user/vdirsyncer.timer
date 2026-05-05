@@ -1,0 +1,11 @@
+[Unit]
+Description=Sync tasks, calendar and contacts via EteSync
+Requires=vdirsyncer.service
+
+[Timer]
+Unit=vdirsyncer.service
+OnStartupSec=2min
+OnUnitActiveSec=5min
+
+[Install]
+WantedBy=timers.target

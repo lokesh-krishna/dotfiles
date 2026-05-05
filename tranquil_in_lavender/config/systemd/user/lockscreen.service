@@ -1,0 +1,10 @@
+[Unit]
+Description=Literature clock for my lock screen
+
+[Service]
+Type=exec
+WorkingDirectory=/home/loki/projects/literature-clock/docs
+ExecStart=/usr/bin/python -m http.server 8000 --bind 127.0.0.1
+
+[Install]
+WantedBy=default.target

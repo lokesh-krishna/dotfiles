@@ -1,0 +1,154 @@
+* {
+  font-family: 'MD UI Trial Medium', 'tabler-icons';
+}
+
+window#waybar {
+  background: #11111b;
+  color: #cdd6f4;
+}
+
+tooltip {
+  background: #1e1e2e;
+  border-radius: 15px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #89b4fa;
+  font-size: 12pt;
+}
+
+tooltip label {
+  color: #cdd6f4;
+  padding: 5px;
+  font-family: 'MD IO Trial Medium';
+}
+
+#workspaces {
+  font-size: 15.5pt;
+  margin-left: 10px;
+}
+
+#workspaces button {
+  color: #b4befe;
+  padding-right: 5px;
+  padding-left: 5px;
+  border-radius: 20px;
+}
+
+#workspaces button.empty {
+  color: #585b70;
+}
+
+#workspaces button.focused {
+  color: #89b4fa;
+}
+
+#workspaces button:hover {
+  background: #89b4fa;
+  color: #11111b;
+  border-radius: 20px;
+}
+
+#workspaces button.focused:hover {
+  background: #b4befe;
+  color: #11111b;
+  border-radius: 20px;
+}
+
+#custom-music-icon {
+  color: #f5c2e7;
+  font-size: 15.5pt;
+  margin-right: 10px;
+}
+
+#custom-spotify {
+  color: #cdd6f4;
+  font-size: 12pt;
+  border-radius: 0px;
+}
+
+#custom-feishin {
+  color: #f5c2e7;
+  font-size: 15.5pt;
+  border-radius: 0px;
+}
+
+#clock {
+  font-size: 12pt;
+  margin-left: 15px;
+  margin-right: 15px;
+  color: #cdd6f4;
+}
+
+#custom-temperature-icon {
+  color: #89dceb;
+  font-size: 15.5pt;
+}
+
+#custom-temperature {
+  color: #cdd6f4;
+  font-size: 12pt;
+}
+
+#custom-apparent-temperature {
+  color: #cdd6f4;
+  font-size: 12pt;
+  margin-left: 5px;
+}
+
+#network {
+  font-size: 15.5pt;
+  color: #a6e3a1;
+  margin-left: 15px;
+}
+
+#network.address {
+  font-size: 11pt;
+  color: #a6adc8;
+}
+
+#custom-vpn {
+  color: #74c7ec;
+  font-size: 15.5pt;
+  margin-left: 10px;
+}
+
+#custom-exitnode {
+  color: #b4befe;
+  font-size: 15.5pt;
+  margin-left: 15px;
+}
+
+#custom-freemedia {
+  color: #f2cdcd;
+  font-size: 15.5pt;
+  margin-left: 15px;
+}
+
+#custom-dnd {
+  color: #cba6f7;
+  font-size: 15.5pt;
+  margin-left: 15px;
+}
+
+#custom-brightness-icon {
+  font-size: 15.5pt;
+  color: #fab387;
+  margin-left: 15px;
+}
+
+#custom-brightness-value {
+  color: #cdd6f4;
+  font-size: 12pt;
+  margin-left: 10px;
+}
+
+#pulseaudio {
+  color: #f9e2af;
+  font-size: 15.5pt;
+  margin-left: 15px;
+}
+
+#pulseaudio.volume {
+  color: #cdd6f4;
+  font-size: 12pt;
+}

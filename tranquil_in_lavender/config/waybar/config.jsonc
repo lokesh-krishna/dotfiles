@@ -1,0 +1,223 @@
+{
+  "layer": "top",
+  "position": "top",
+  "reload_style_on_change": true,
+  "modules-left": [
+    "niri/workspaces",
+  ],
+  "modules-center": [
+    "custom/music-icon",
+    "custom/spotify",
+  ],
+  "modules-right": [
+    "group/group-temperature",
+    "group/group-network",
+    "group/group-brightness",
+    "group/audio",
+    "custom/dnd",
+    "clock",
+  ],
+  // Modules configuration
+  "niri/workspaces": {
+    "format": "{icon}",
+    "format-icons": {
+      "default": "",
+      "focused": ""
+    }
+  },
+  "custom/music-icon": {
+    "format": "{}",
+    "interval": 1,
+    "exec-if": "pgrep spotify",
+    "exec": "~/.config/waybar/scripts/spotify_icon.sh",
+    "tooltip": false,
+  },
+  "custom/spotify": {
+    "format": "{}",
+    "interval": 1,
+    "exec-if": "pgrep spotify",
+    "on-click": "playerctl -p spotify play-pause",
+    "on-scroll-up": "playerctl -p spotify previous",
+    "on-scroll-down": "playerctl -p spotify next",
+    "tooltip": false,
+    "exec": "~/.config/waybar/scripts/spotify_playing.sh"
+  },
+  "custom/feishin": {
+    "format": "",
+    "interval": 1,
+    "exec-if": "pgrep feishin",
+    "return-type": "json",
+    "on-click": "playerctl -p Feishin play-pause",
+    "on-scroll-up": "playerctl -p Feishin previous",
+    "on-scroll-down": "playerctl -p Feishin next",
+    "tooltip": false,
+    "escape": false,
+    "exec": "~/.config/waybar/scripts/feishin.sh"
+  },
+  "custom/dnd": {
+    "format": "{}",
+    "interval": 5,
+    "tooltip": false,
+    "exec": "~/.config/waybar/scripts/dnd.sh",
+    "on-click": "dunstctl set-paused toggle"
+  },
+  "group/group-network": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": 300,
+      "children-class": "network-family",
+      "transition-left-to-right": false
+    },
+    "modules": [
+      "network",
+      // "network#address",
+      "custom/vpn",
+      "custom/exitnode",
+      "custom/freemedia"
+    ]
+  },
+  "network": {
+    "format-wifi": "",
+    "format-ethernet": "",
+    "format-linked": "",
+    "format-disconnected": "",
+    "tooltip-format": "{ipaddr}",
+    "tooltip-format-wifi": "{essid}",
+    "tooltip": false,
+    "tooltip-format-disconnected": "Disconnected",
+    "max-length": 4
+  },
+  "network#address": {
+    "format-wifi": "{essid}",
+    "format-ethernet": "{ipaddr}",
+    "format-linked": "{ipaddr}",
+    "format-disconnected": "Disconnected",
+    "tooltip": false
+  },
+  "custom/vpn": {
+    "format": "{}",
+    "on-click": "~/.config/waybar/scripts/vpn_control.sh",
+    "interval": 1,
+    "tooltip": false,
+    "exec": "~/.config/waybar/scripts/vpn.sh"
+  },
+  "custom/exitnode": {
+    "format": "{}",
+    "on-click": "~/.config/waybar/scripts/exitnode_control.sh",
+    "interval": 1,
+    "tooltip": false,
+    "exec": "~/.config/waybar/scripts/exitnode.sh",
+    "hide-empty-text": true
+  },
+  "custom/freemedia": {
+    "format": "{}",
+    "on-click": "~/.config/waybar/scripts/freemedia_mount.sh",
+    "interval": 1,
+    "tooltip": false,
+    "exec": "~/.config/waybar/scripts/freemedia.sh"
+  },
+  "group/audio": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": 300,
+      "transition-left-to-right": false
+    },
+    "modules": [
+      "pulseaudio",
+      "pulseaudio#volume"
+    ]
+  },
+  "pulseaudio": {
+    "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+    "tooltip": false,
+    "format": "{icon}",
+    "format-muted": "",
+    "format-icons": {
+      "alsa_output.usb-TTGK_Technology_Co._Ltd_Audiocular_D07-00.analog-stereo": "",
+      "alsa_output.pci-0000_13_00.6.analog-stereo": "",
+      "default": [
+        "",
+        ""
+      ]
+    }
+  },
+  "pulseaudio#volume": {
+    "tooltip": false,
+    "format": "{volume}%"
+  },
+  "group/group-brightness": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": 300,
+      "transition-left-to-right": false
+    },
+    "modules": [
+      "custom/brightness-icon",
+      "custom/brightness-value"
+    ]
+  },
+  "custom/brightness-icon": {
+    "format": "",
+    "on-scroll-up": "ddcutil --bus 10 setvcp 10 + 10",
+    "on-scroll-down": "ddcutil --bus 10 setvcp 10 - 10",
+    "on-click": "ddcutil --bus 10 setvcp 10 0",
+    "on-click_right": "ddcutil --bus 10 setvcp 10 100",
+    "exec": "~/.config/waybar/scripts/brightness.sh",
+    "tooltip": false,
+    "interval": 1
+  },
+  "custom/brightness-value": {
+    "format": "{}%",
+    "interval": 1,
+    "tooltip": false,
+    "exec": "~/.config/waybar/scripts/brightness.sh"
+  },
+  "clock": {
+    "format": "{:%b %d, %H:%M}",
+    "timezones": ["Asia/Kolkata", "Europe/Berlin"],
+    "actions": {
+      "on-scroll-up": "tz_up",
+      "on-scroll-down": "tz_down"
+    },
+    "tooltip-format": "{calendar}",
+    "calendar": {
+      "mode": "month",
+      "iso8601": true,
+      "format": {
+        "months": "<span color='#cdd6f4'><b>{}</b></span>",
+        "weekdays": "<span color='#cdd6f4'>{}</span>",
+        "today": "<span color='#89b4fa'><b>{}</b></span>",
+        "days": "<span color='#9399b2'><b>{}</b></span>"
+      }
+    }
+  },
+  "group/group-temperature": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": 300,
+      "children-class": "temp-family",
+      "transition-left-to-right": false
+    },
+    "modules": [
+      "custom/temperature-icon",
+      "custom/temperature",
+      "custom/apparent-temperature"
+    ]
+  },
+  "custom/temperature-icon": {
+    "format": "",
+    "tooltip": false
+  },
+  "custom/temperature": {
+    "format": {},
+    "exec": "~/.config/waybar/scripts/temperature.sh",
+    "interval": 3600,
+    "tooltip": false
+  },
+  "custom/apparent-temperature": {
+    "format": {},
+    "exec": "~/.config/waybar/scripts/apparent_temp.sh",
+    "interval": 3600,
+    "tooltip": false
+  },
+}

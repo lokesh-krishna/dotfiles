@@ -1,0 +1,169 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "rga configuration",
+  "description": "this is kind of a \"polyglot\" struct, since it serves three functions\n\n1. describing the command line arguments using structopt+clap and for man page / readme generation 2. describing the config file format (output as JSON schema via schemars)",
+  "type": "object",
+  "properties": {
+    "accurate": {
+      "description": "Use more accurate but slower matching by mime type\n\nBy default, rga will match files using file extensions. Some programs, such as sqlite3, don't care about the file extension at all, so users sometimes use any or no extension at all. With this flag, rga will try to detect the mime type of input files using the magic bytes (similar to the `file` utility), and use that to choose the adapter. Detection is only done on the first 8KiB of the file, since we can't always seek on the input (in archives).",
+      "type": "boolean"
+    },
+    "adapters": {
+      "description": "Change which adapters to use and in which priority order (descending)\n\n\"foo,bar\" means use only adapters foo and bar. \"-bar,baz\" means use all default adapters except for bar and baz. \"+bar,baz\" means use all default adapters and also bar and baz.",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "cache": {
+      "$ref": "#/definitions/CacheConfig"
+    },
+    "max_archive_recursion": {
+      "description": "Maximum nestedness of archives to recurse into\n\nWhen searching in archives, rga will recurse into archives inside archives. This option limits the depth.",
+      "allOf": [
+        {
+          "$ref": "#/definitions/MaxArchiveRecursion"
+        }
+      ]
+    },
+    "no_prefix_filenames": {
+      "description": "Don't prefix lines of files within archive with the path inside the archive.\n\nInside archives, by default rga prefixes the content of each file with the file path within the archive. This is usually useful, but can cause problems because then the inner path is also searched for the pattern.",
+      "type": "boolean"
+    },
+    "custom_adapters": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "$ref": "#/definitions/CustomAdapterConfig"
+      }
+    }
+  },
+  "definitions": {
+    "CacheConfig": {
+      "type": "object",
+      "properties": {
+        "disabled": {
+          "description": "Disable caching of results\n\nBy default, rga caches the extracted text, if it is small enough, to a database in ${XDG_CACHE_DIR-~/.cache}/ripgrep-all on Linux, ~/Library/Caches/ripgrep-all on macOS, or C:\\Users\\username\\AppData\\Local\\ripgrep-all on Windows. This way, repeated searches on the same set of files will be much faster. If you pass this flag, all caching will be disabled.",
+          "type": "boolean"
+        },
+        "max_blob_len": {
+          "description": "Max compressed size to cache\n\nLongest byte length (after compression) to store in cache. Longer adapter outputs will not be cached and recomputed every time.\n\nAllowed suffixes on command line: k M G",
+          "allOf": [
+            {
+              "$ref": "#/definitions/CacheMaxBlobLen"
+            }
+          ]
+        },
+        "compression_level": {
+          "description": "ZSTD compression level to apply to adapter outputs before storing in cache db\n\nRanges from 1 - 22",
+          "allOf": [
+            {
+              "$ref": "#/definitions/CacheCompressionLevel"
+            }
+          ]
+        },
+        "path": {
+          "description": "Path to store cache db",
+          "allOf": [
+            {
+              "$ref": "#/definitions/CachePath"
+            }
+          ]
+        }
+      }
+    },
+    "CacheMaxBlobLen": {
+      "type": "integer",
+      "format": "uint",
+      "minimum": 0.0
+    },
+    "CacheCompressionLevel": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "CachePath": {
+      "type": "string"
+    },
+    "MaxArchiveRecursion": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "CustomAdapterConfig": {
+      "type": "object",
+      "required": [
+        "args",
+        "binary",
+        "description",
+        "extensions",
+        "name",
+        "version"
+      ],
+      "properties": {
+        "name": {
+          "description": "the unique identifier and name of this adapter. Must only include a-z, 0-9, _",
+          "type": "string"
+        },
+        "description": {
+          "description": "a description of this adapter. shown in help",
+          "type": "string"
+        },
+        "disabled_by_default": {
+          "description": "if true, the adapter will be disabled by default",
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "version": {
+          "description": "version identifier. used to key cache entries, change if the configuration or program changes",
+          "type": "integer",
+          "format": "int32"
+        },
+        "extensions": {
+          "description": "the file extensions this adapter supports. For example [\"epub\", \"mobi\"]",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "mimetypes": {
+          "description": "if not null and --rga-accurate is enabled, mime type matching is used instead of file name matching",
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": "string"
+          }
+        },
+        "match_only_by_mime": {
+          "description": "if --rga-accurate, only match by mime types, ignore extensions completely",
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "binary": {
+          "description": "the name or path of the binary to run",
+          "type": "string"
+        },
+        "args": {
+          "description": "The arguments to run the program with. Placeholders: - $input_file_extension: the file extension (without dot). e.g. foo.tar.gz -> gz - $input_file_stem, the file name without the last extension. e.g. foo.tar.gz -> foo.tar - $input_virtual_path: the full input file path. Note that this path may not actually exist on disk because it is the result of another adapter stdin of the program will be connected to the input file, and stdout is assumed to be the converted file",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "output_path_hint": {
+          "description": "The output path hint. The placeholders are the same as for `.args`\n\nIf not set, defaults to \"${input_virtual_path}.txt\"\n\nSetting this is useful if the output format is not plain text (.txt) but instead some other format that should be passed to another adapter",
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    }
+  }
+}

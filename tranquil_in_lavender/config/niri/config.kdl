@@ -1,0 +1,11 @@
+// Modular config
+include "layout.kdl"
+include "animations.kdl"
+include "binds.kdl"
+include "input.kdl"
+include "misc.kdl"
+include "outputs.kdl"
+include "window_rules.kdl"
+include "workspaces.kdl"
+include "debug.kdl"
+

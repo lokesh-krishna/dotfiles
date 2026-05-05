@@ -1,0 +1,9 @@
+[Unit]
+Description=Sync tasks, calendar and contacts via EteSync
+Wants=vdirsyncer.timer
+
+[Service]
+ExecStart=/usr/bin/vdirsyncer sync
+
+[Install]
+WantedBy=default.target

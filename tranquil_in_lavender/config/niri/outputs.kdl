@@ -1,0 +1,3 @@
+environment {
+  DISPLAY ":0"
+}

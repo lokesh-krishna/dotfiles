@@ -1,0 +1,8 @@
+[Unit]
+PartOf=graphical-session.target
+After=graphical-session.target
+Requisite=graphical-session.target
+
+[Service]
+ExecStart=/usr/bin/swaybg -m fill -i "/home/loki/pictures/wallpapers/gracile/144189449_p9.jpg"
+Restart=on-failure

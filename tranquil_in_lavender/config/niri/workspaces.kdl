@@ -1,0 +1,8 @@
+// Workspaces
+workspace "home"
+workspace "browsers"
+workspace "notes"
+workspace "chat"
+workspace "reading"
+workspace "editing"
+workspace "music"

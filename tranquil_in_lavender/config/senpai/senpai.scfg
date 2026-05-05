@@ -1,0 +1,12 @@
+typings false
+pane-widths {
+  channels -23
+  members 0
+}
+colors {
+  prompt "#a6e3a1"
+  unread "#f5c2e7"
+  nicks base
+  nicks self "#89b4fa"
+  status disabled
+}

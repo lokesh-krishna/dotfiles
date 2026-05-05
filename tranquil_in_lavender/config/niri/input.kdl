@@ -1,0 +1,43 @@
+// Set cursor
+cursor {
+  xcursor-theme "posy-black"
+  xcursor-size 24
+}
+
+input {
+  keyboard {
+    xkb {
+      // You can set rules, model, layout, variant and options.
+      // For more information, see xkeyboard-config(7).
+
+      // For example:
+      // layout "us,ru"
+      // options "grp:win_space_toggle,compose:ralt,ctrl:nocaps"
+    }
+
+    // Enable numlock on startup, omitting this setting disables it.
+    numlock
+    }
+
+    mouse {
+      // off
+      // natural-scroll
+      // accel-speed 0.2
+      // accel-profile "flat"
+      // scroll-method "no-scroll"
+    }
+
+
+    // Uncomment this to make the mouse warp to the center of newly focused windows.
+    // warp-mouse-to-focus
+
+    // Focus windows and outputs automatically when moving the mouse into them.
+    // Setting max-scroll-amount="0%" makes it work only on windows already fully on screen.
+    focus-follows-mouse max-scroll-amount="0%"
+}
+
+gestures {
+  hot-corners {
+    off
+  }
+}

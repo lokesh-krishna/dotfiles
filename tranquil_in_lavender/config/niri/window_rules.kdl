@@ -1,0 +1,117 @@
+// Layer rules
+layer-rule {
+  match namespace="awww-daemon"
+  place-within-backdrop true
+}
+
+layer-rule {
+  match namespace="notifications"
+  opacity 0.9
+  background-effect {
+    blur true
+    xray false
+  }
+}
+
+layer-rule {
+  match namespace="waybar"
+  opacity 0.9
+  background-effect {
+    blur true
+  }
+}
+
+layer-rule {
+  match namespace="ashell-main-layer"
+  match namespace="ashell-menu-layer"
+  background-effect {
+    blur true
+    xray false
+  }
+}
+
+// Window rules
+
+window-rule {
+  match app-id="Spotify"
+  opacity 0.9
+  default-window-height { proportion 0.7;}
+  open-on-workspace "music"
+  open-maximized true
+  background-effect {
+    blur true
+  }
+}
+
+window-rule {
+  match app-id="signal beta"
+  default-column-width { proportion 0.25;}
+  default-window-height { proportion 0.65;}
+  open-on-workspace "chat"
+  open-floating true
+  default-floating-position x=550 y=250 relative-to="top-left"
+  opacity 0.9
+  background-effect {
+    blur true
+    xray false
+  }
+}
+
+window-rule {
+  match title="senpai"
+  open-on-workspace "chat"
+  open-floating true
+  default-floating-position x=1300 y=250 relative-to="top-left"
+  min-height 850
+  min-width 750
+  opacity 0.9
+  background-effect {
+    blur true
+  }
+}
+
+window-rule {
+  match app-id="zen"
+  open-on-workspace "browsers"
+  open-maximized true
+}
+
+window-rule {
+  match app-id="gimp"
+  open-on-workspace "editing"
+  open-maximized true
+}
+
+window-rule {
+  match title="Open Files"
+  open-floating true
+  default-window-height {proportion 0.5;}
+}
+
+window-rule {
+  match app-id="foot"
+  match app-id="obsidian"
+  opacity 0.9
+  background-effect {
+    blur true
+  }
+}
+
+window-rule {
+  match app-id="vicinae"
+  draw-border-with-background false
+  background-effect {
+    blur true
+    xray false
+  }
+}
+
+window-rule {
+  match app-id="positron"
+  match app-id="anki"
+  draw-border-with-background false
+  opacity 0.9
+  background-effect {
+    blur true
+  }
+}

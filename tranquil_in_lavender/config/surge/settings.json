@@ -1,0 +1,28 @@
+{
+  "general": {
+    "default_download_dir": "/home/loki/downloads/surge/",
+    "warn_on_duplicate": true,
+    "extension_prompt": false,
+    "auto_resume": false,
+    "skip_update_check": false,
+    "clipboard_monitor": true,
+    "theme": 0,
+    "log_retention_count": 5
+  },
+  "network": {
+    "max_connections_per_host": 32,
+    "max_concurrent_downloads": 3,
+    "user_agent": "",
+    "proxy_url": "",
+    "sequential_download": false,
+    "min_chunk_size": 2097152,
+    "worker_buffer_size": 524288
+  },
+  "performance": {
+    "max_task_retries": 3,
+    "slow_worker_threshold": 0.3,
+    "slow_worker_grace_period": 5000000000,
+    "stall_timeout": 3000000000,
+    "speed_ema_alpha": 0.3
+  }
+}
