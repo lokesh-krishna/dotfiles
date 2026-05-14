@@ -48,20 +48,26 @@ Wallpapers used in this setup can be found in the [wallpapers](https://github.co
 
 ## Showcase
 
-### Video
-
 ### Clean
 
-![Screenshot of clean system](./images/clean.png)
+![Screenshot of an empty desktop showing the bar and the wallpaper](./images/clean.png)
 
 ### Busy
 
+![Screenshot of a desktop with multiple windows open](./images/busy.png)
+
 ### Browser
 
-### Documents
+![Screenshot of a desktop with the browser open the home assistant's dashboard](./images/browser.png)
 
 ### Music
 
+![Screenshot of Spotify with the Spotify-Text theme and cava as a visualiser](./images/music.png)
+
 ### Launcher
 
+![Screenshot of the desktop with the launcher open](./images/launcher.png)
+
 ### Lock Screen
+
+![Screenshot of the lockscreen, showing a blurred version of the wallpaper with a script font](./images/lockscreen.png)
