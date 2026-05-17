@@ -32,7 +32,7 @@ The following are the programs used in this setup:
 - music
 	- music player: [ncmpcpp](https://github.com/ncmpcpp/ncmpcpp)
 	- visualiser: [cava](https://github.com/ncmpcpp/ncmpcpp)
-- system monitor: [byptop](https://github.com/aristocratos/bpytop)
+- system monitor: [bpytop](https://github.com/aristocratos/bpytop)
 - image viewer: [imv](https://github.com/eXeC64/imv)
 - media player: [mpv](https://mpv.io/)
 - file manager: [ranger](https://github.com/ranger/ranger)
