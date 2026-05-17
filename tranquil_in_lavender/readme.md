@@ -52,6 +52,10 @@ Wallpapers used in this setup can be found in the [wallpapers](https://github.co
 
 ![Screenshot of an empty desktop showing the bar and the wallpaper](./images/clean.png)
 
+### Fetch
+
+![Screenshot of desktop with fetch](./images/fetch.png)
+
 ### Busy
 
 ![Screenshot of a desktop with multiple windows open](./images/busy.png)
@@ -59,6 +63,14 @@ Wallpapers used in this setup can be found in the [wallpapers](https://github.co
 ### Browser
 
 ![Screenshot of a desktop with the browser open the home assistant's dashboard](./images/browser.png)
+
+### Communications Central
+
+![Screenshot of a desktop with Legcord using the System24 theme and senpai](./images/chat.png)
+
+### Documents and Notes
+
+![Screenshot of a desktop with Zathura and Obsidian](./images/docs.png)
 
 ### Music
 
